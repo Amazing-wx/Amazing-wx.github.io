@@ -74,6 +74,8 @@
     <!-- Core JS-->
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+    
+    
 
 </head>
 
@@ -93,17 +95,25 @@
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#page-top">HOME</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
+                   
                     <li class="nav-item">
                         <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#researchs">RESEARCHS</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
     </nav>
+
+    
 
     <!-- Top Section -->
     <section class="top-section" style="background-image: url('static/assets/img/background.jpeg');">
@@ -135,17 +145,7 @@
     </section>
     <!-- Home -->
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
+   
 
     <!-- Awards -->
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
@@ -159,7 +159,279 @@
     </section>
     <!-- Awards -->
 
+     <!-- Publications -->
+     <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+        <div class="container px-5">
+            <header>
+                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
+            </header>
+            <div class="main-body" id="publications-md"></div>
 
+        </div>
+    </section>
+    <!-- Publications  -->
+
+    <!-- Researchs -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="researchs">
+        <div class="container px-5">
+           <header>
+                <h2 id="researchs-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;RESEARCHS</h2>
+                <style>
+                    /* 自定义 Carousel 控件按钮颜色为红色 */
+                    .carousel-control-prev, .carousel-control-next {
+                        background-color: white; /* 设置按钮背景颜色为红色 */
+                        border-color: white; /* 设置按钮边框颜色为红色 */
+                    }
+                
+                    .carousel-control-prev:hover, .carousel-control-next:hover {
+                        background-color: white; /* 设置悬停时的按钮背景颜色为深红色 */
+                        border-color: white; /* 设置悬停时的按钮边框颜色为深红色 */
+                    }
+                
+                    .carousel-control-prev-icon, .carousel-control-next-icon {
+                        background-color: black; /* 设置按钮图标的背景颜色为白色，以便与红色按钮背景形成对比 */
+                    }
+                    </style>
+           </header>
+           <div class="main-body" id="researchs-md">
+             <h3>Project 1: National Undergraduate Training Program for Innovation and Entrepreneurship: Mechanical Design and Control of a New Traffic Directing Robot （Undergraduate period）</h3>
+             <p><strong>Duration:</strong> Sept. 2022—Jun. 2023</p>  
+             <p><strong>Description:</strong> To improve the intelligent efficiency and reduce the safety accidents of the traffic police operation, the combination of ‘robot’ and ‘traffic’ is used to design a mobile intelligent robot.  It can work continuously for 24 hours to solve the safety problem of traffic police due to fatigue operation in the evening. In terms of mechanical structure, the adoption of the body + robotic arm + chassis three main parts of the composition.</p>
+             <p>1.Designed an intelligent traffic-directing robot based on an STM32 chip with two 7-DOF humanoid robotic arms and four McNamee wheels to move. It replaced humans to achieve the functions of directing traffic and movable electronic police.</p>
+             <p>2.Adjusted the PWM duty cycle to control the rotation angle of each servo, enabling the two 7-DOF robotic arms to simulate the command gestures of traffic police.</p>
+             <p>3.Utilized the camera mounted on arms for image recognition with bottom McNamee wheels, it acts as a mobile electronic police officer to capture violations of the law, making up for the limitations of the current electronic police officer's fixed position.</p>
+             <p><strong>Achievement</strong> :- <strong>National First Prize</strong> of the 23rd China Robotics and Artificial Intelligence Competition, Dec.2021.
+                - <strong>National First Prize</strong>  of the International Youth Artificial Intelligence Innovation Competition, Nov.2021. </p>
+             <!-- Bootstrap Carousel for Image Auto-Play -->
+             <div id="researchProjectsCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <!-- Indicators (Optional) -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="4"></li>
+                </ol>
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- First Image -->
+                    <div class="carousel-item active">
+                        <img src="static/assets/img/Traffic-Robot.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+
+                    <!-- Second Image -->
+                    <div class="carousel-item">
+                        <img src="static/assets/img/Mechanical-construction.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Control Strategy Simulation" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+
+                    <!-- Third Image -->
+                    <div class="carousel-item">
+                        <img src="static/assets/img/Motion2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+
+                     <!-- Fourth Image -->
+                     <div class="carousel-item">
+                        <img src="static/assets/img/Motion3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                         
+                        </div>
+                    </div>
+
+                     <!-- Fifth Image -->
+                     <div class="carousel-item">
+                        <img src="static/assets/img/5-DOF-Arm.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                  
+                    <!-- Add more carousel items as needed for each image -->
+                </div>
+
+                <!-- Carousel Controls (Optional) -->
+                <a class="carousel-control-prev" href="#researchProjectsCarousel1" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#researchProjectsCarousel1" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+                
+
+            <!-- Add video below the carousel -->
+            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+                <div class="container px-5">
+                    <header>
+                        <h2>Project 1 Video</h2>
+                    </header>
+                    <div class="main-body d-flex justify-content-center">
+                        <!-- Video Embed -->
+                        <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                            <source src="static/assets/video/project1-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+            
+             <h3>Project 2: Design and Motion Control of a Six-DOF Parallel Stabilized Platform for Offshore Wave Compensation （postgraduate stage）</h3>
+             <p><strong>Duration:</strong> Dec.2023 - Preseant    Commissioned by China General Nuclear Power Group Shanwei Laboratory| Project Team Student Leader </p>
+             <p><strong>Description:</strong> To improve the accuracy of offshore equipment, ensure the safety of operation and maintenance personne and increasing the window for offshore operations. Designed a 6-DOF Stewart parallel platform based on UCU mechanism with a 3-DOF gangway to compensate for wave motion. </p>
+             <p>1.Designed a  two-tiered Stewart platform as an experimental prototype.The lower Stewart platform is used as a motion simulator geneartor to provide wave motion for a variety of sea states ,and the upper platform is kept smooth by controlling the length of each branch chain to isolate vibrations.<p>
+             <p>2.Proposed an improved linear active disturbance reject control (ILADRC) with linear quadratic regulator (LQR) based on joint space to precisely control the chain limb in the 6UCU Stewart parallel mechanism, thus keeping the top platform stable.</p>
+             <p>3.Utilized LQR to replace the series PD control in the traditional LADRC to solve the problem of controller bandwidth and its stability is verified using the Lyapunov theory. Used the LESO to estimate and compensate for the total disturbance of system<p>
+             <p><strong>Achievement</strong> :- <strong>Wenxuan Wang</strong>, Yang Zhang, Peng Xu*, Bing Li*. Linear active disturbance rejection control with linear quadratic regulator for Stewart platform in active wave compensation system. <strong>Applied Ocean Research,2024 </strong> (JCR Q1).<a href="https://doi.org/10.2139/ssrn.4896024">paper</a> <p>
+            
+             <!-- Bootstrap Carousel for Image Auto-Play -->
+             <div id="researchProjectsCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <!-- Indicators (Optional) -->
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="6"></li>
+                </ol>
+                <!-- Carousel Inner -->
+                <div class="carousel-inner">
+                    <!-- First Image -->
+                    <div class="carousel-item active">
+                        <img src="static/assets/img/Stewart.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+
+                     <!-- Fifth Image -->
+                     <div class="carousel-item">
+                        <img src="static/assets/img/pro.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                     <!-- sixth Image -->
+                     <div class="carousel-item">
+                        <img src="static/assets/img/simulate.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                    <!-- seventh Image -->
+                    <div class="carousel-item">
+                        <img src="static/assets/img/wave1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+
+                     <!-- seventh Image -->
+                     <div class="carousel-item">
+                        <img src="static/assets/img/compensation.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+
+                      <!-- seventh Image -->
+                      <div class="carousel-item">
+                        <img src="static/assets/img/length.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                  
+                      <!-- seventh Image -->
+                      <div class="carousel-item">
+                        <img src="static/assets/img/length1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                    <!-- Add more carousel items as needed for each image -->
+                </div>
+
+                <!-- Carousel Controls (Optional) -->
+                <a class="carousel-control-prev" href="#researchProjectsCarousel2" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#researchProjectsCarousel2" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+                
+            <!-- Add video below the carousel -->
+            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+                <div class="container px-5">
+                    <header>
+                        <h2>Project 2 Video</h2>
+                    </header>
+                    <div class="main-body d-flex justify-content-center">
+                        <!-- Video Embed -->
+                        <video controls style="max-width: 800px; width: 100%;">
+                            <source src="static/assets/video/project23-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+
+             <h3>Project 3: Wave Compensation for Offshore Wind Power Operation</h3>
+             <p><strong>Duration:</strong> June 2022 - Present</p>
+             <p><strong>Description:</strong> Aimed at improving operational stability of offshore wind power vessels, this project developed active fault-tolerant control mechanisms. The proposed LQR-LADRC joint space control strategy was tested through extensive simulations.</p>
+             
+ 
+             
+                <!-- Add video below the carousel -->
+            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+                <div class="container px-5">
+                    <header>
+                        <h2>Project 2 Video</h2>
+                    </header>
+                    <div class="main-body d-flex justify-content-center">
+                        <!-- Video Embed -->
+                        <video controls style="max-width: 800px; width: 100%;">
+                            <source src="static/assets/video/project23-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+             
+             
+             <h3>Project 4: National Undergraduate Training Program for Innovation and Entrepreneurship: Motion Control of a Smart Home Security Robot</h3>
+             <p><strong>Duration:</strong> March 2021 - April 2023</p> 1+1
+             <p><strong>Description:</strong> This project focuses on the kinematic modeling and control of redundant drive parallel mechanisms in complex mechanical systems. We established inverse kinematic equations using closed-loop vector methods and applied LQR-LADRC strategies.</p>
+             
+             <h3>Project 5: Intelligent Logistics Handling Robot</h3>
+             <p><strong>Duration:</strong> March 2021 - April 2023</p>
+             <p><strong>Description:</strong> This project focuses on the kinematic modeling and control of redundant drive parallel mechanisms in complex mechanical systems. We established inverse kinematic equations using closed-loop vector methods and applied LQR-LADRC strategies.</p>
+           
+             <h3>Project 6: Adaptive Self-Improvement Control Based Polishing of Mixed-Link Robotic Arm</h3>
+             <p><strong>Duration:</strong> March 2021 - April 2023</p>
+             <p><strong>Description:</strong> This project focuses on the kinematic modeling and control of redundant drive parallel mechanisms in complex mechanical systems. We established inverse kinematic equations using closed-loop vector methods and applied LQR-LADRC strategies.</p>
+           
+            </div>
+         </div>
+      </section>
+    <!-- Researchs -->
+       
     <!-- Footer-->
     <footer class="bg-bottom text-center py-5">
         <div class="container px-5">
@@ -171,6 +443,10 @@
             </div>
         </div>
     </footer>
+
+ 
+    
+    
 
 </body>
 
