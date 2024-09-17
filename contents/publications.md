@@ -1,3 +1,3 @@
 - <strong>Wenxuan Wang</strong>, Yang Zhang, Peng Xu*, Bing Li*. Linear active disturbance rejection control with linear quadratic regulator for Stewart platform in active wave compensation system. <strong>Applied Ocean Research,2024 </strong> (JCR Q1) [[Paper]](https://doi.org/10.2139/ssrn.4896024).
 
-- <strong>Wenxuan Wang</strong>, Xiaokai Cui, Peng Xu*, Bing Li*. An improved linear quadratic regulator of shipborne Stewart platform for wave compensation, <strong>IEEE International Conference on Robotics and Biomimetics</strong>, 2024 [[Paper]](static/assets/5.pdf).
+- <strong>Wenxuan Wang</strong>, Xiaokai Cui, Peng Xu*, Bing Li*. An improved linear quadratic regulator of shipborne Stewart platform for wave compensation, <strong>IEEE International Conference on Robotics and Biomimetics</strong>, 2024 [[Paper]](static/assets/2.pdf).
