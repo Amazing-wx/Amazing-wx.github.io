@@ -1,7 +1,7 @@
 #### Honour
 - <strong>100 Outstanding National Scholarship Representatives</strong> (only 100 a year in China) |Published in People's Daily 2022.5.4\
 The link to the award story is below：\
-[[Bulletin 5 of People's Daily in 2022.5.4]](static/assets/1.pdf)、 [[Bulletin 6 of People's Daily in 2022.5.4]](https://maipdf.com/est/a66e5311a829ca@pdf)\
+[[Bulletin 5 of People's Daily in 2022.5.4]](assets/1.pdf)、 [[Bulletin 6 of People's Daily in 2022.5.4]](https://maipdf.com/est/a66e5311a829ca@pdf)\
 [点击这里查看PDF文件](static/assets/1.pdf)
 [[Here's a link to the Gansu Province Recognition Report]](https://baijiahao.baidu.com/s?id=1731994747390926132)\
 [[Here's the link to the story on the school's official website]](https://www.lut.edu.cn/info/1062/97102.htm)
