@@ -4,7 +4,7 @@ The link to the award story is below：\
 <a href="static/assets/5.pdf" target="_blank">Bulletin 5 of People's Daily in 2022.5.4</a>,
 <a href="static/assets/6.pdf" target="_blank">Bulletin 6 of People's Daily in 2022.5.4</a>
 
-<a href="https://baijiahao.baidu.com/s?id=1731994747390926132" target="_blank">Here's a link to the Gansu Province Recognition Report</a>.
+<a href="https://baijiahao.baidu.com/s?id=1731994747390926132" target="_blank">Here's a link to the Gansu Province Recognition Report</a>.\
 <a href="https://www.lut.edu.cn/info/1062/97102.htm" target="_blank">Here's the link to the story on the school's official website</a>.
 
 
