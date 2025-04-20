@@ -1,9 +1,10 @@
 
 He completed his Bachelor's degree with a GPA ranking 1 / 459 at LUT as Outstanding Graduate in 2023.
 
-He is currently pursuing a Master's Degree in Mechanical Engineering, at HITSZ(985 C9 Project),the State Key Laboratory of Robotics and Systems(Shenzhen).
+He is currently pursuing a Master's Degree in Mechanical Engineering at <a href="https://www.hitsz.edu.cn/index.html" target="_blank">HITSZ</a> (985, C9 Project), and is affiliated with <a href="https://robot.hit.edu.cn/" target="_blank">the State Key Laboratory of Robotics and Systems (Shenzhen)</a>.
 
-He is an outstanding mechanical and hardware engineer, and a decent programmer. Based on his past experiences and insights, his research interests focus on robotics, motion control electronics, medicine, human-computer interaction, modelling and machine learning. <a href="static/assets/CV-Wenxuan Wang.pdf" target="_blank">His CV</a>.
+He is an outstanding mechanical and hardware engineer, and a decent programmer. Based on his past experiences and insights, his research interests focus on robotics, motion control electronics, medicine, human-computer interaction, modelling, and machine learning. <a href="static/assets/CV-Wenxuan Wang.pdf" target="_blank">His CV</a>.
+
 #### Email
 23S053031@stu.hit.edu.cn 
 
