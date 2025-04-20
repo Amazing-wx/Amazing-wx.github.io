@@ -15,6 +15,5 @@ Supervisor: <strong>[[Prof. Bing Li]](https://faculty.hitsz.edu.cn/libing) ( Nat
 
 B.E., Mechanical Design, Manufacturing, and Automation, Lanzhou University of Technology(LUT), 2019—2023.\
 <strong> GPA: 91.55|100 Overall Ranking 1/459 、 National Scholarship x2 . </strong>
-#### Research Interests
-Robot Motion control, Control algorithm, Parallel mechanism, vibration isolation for wave compensation.
+
 
