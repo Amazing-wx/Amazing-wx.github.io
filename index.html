@@ -174,36 +174,40 @@
 
     <!-- Researchs -->
      
-    <!-- Researchs Section -->
-<section class="bg-gradient-primary-to-secondary-light mt5 md5" id="researchs">
-    <div class="container px-5">
-        <header>
-            <h2 id="researchs-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;RESEARCHS</h2>
-            <style>
-                .carousel-control-prev, .carousel-control-next {
-                    background-color: white;
-                    border-color: white;
-                }
-                .carousel-control-prev:hover, .carousel-control-next:hover {
-                    background-color: white;
-                    border-color: white;
-                }
-                .carousel-control-prev-icon, .carousel-control-next-icon {
-                    background-color: black;
-                }
-            </style>
-        </header>
-        <div class="main-body" id="researchs-md">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="researchs">
+        <div class="container px-5">
+           <header>
+                <h2 id="researchs-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;RESEARCHS</h2>
+                <style>
+                    /* 自定义 Carousel 控件按钮颜色为红色 */
+                    .carousel-control-prev, .carousel-control-next {
+                        background-color: white; /* 设置按钮背景颜色为红色 */
+                        border-color: white; /* 设置按钮边框颜色为红色 */
+                    }
+                
+                    .carousel-control-prev:hover, .carousel-control-next:hover {
+                        background-color: white; /* 设置悬停时的按钮背景颜色为深红色 */
+                        border-color: white; /* 设置悬停时的按钮边框颜色为深红色 */
+                    }
+                
+                    .carousel-control-prev-icon, .carousel-control-next-icon {
+                        background-color: black; /* 设置按钮图标的背景颜色为白色，以便与红色按钮背景形成对比 */
+                    }
+                    </style>
+           </header>
+           <div class="main-body" id="researchs-md">
+
             <h3>Project 1: Design and Motion Control of a Six-DOF Parallel Stabilized Platform for Offshore Wave Compensation (Postgraduate stage).</h3>
-            <p><strong>Commissioned by China General Nuclear Power Group Shanwei Laboratory | Project Team Student Leader --- 2023 - Present</strong></p>
-            <p><strong>Description:</strong> Offshore operations are vulnerable to ship disturbance caused by waves...</p>
-
-            <p><strong>Achievement</strong>: <strong>Wenxuan Wang</strong>, Yang Zhang, Peng Xu*, Bing Li*. Linear active disturbance rejection control with linear quadratic regulator for Stewart platform in active wave compensation system. <strong>Applied Ocean Research, 2025 (JCR Q1).</strong> <a href="https://www.sciencedirect.com/science/article/pii/S0141118725000574" target="_blank">paper</a></p>
-
-            <p><strong>Wenxuan Wang</strong>, Xiaokai Cui, Peng Xu*, Bing Li*. An improved linear quadratic regulator of shipborne Stewart platform for wave compensation, <strong>IEEE International Conference on Robotics and Biomimetics, Bangkok, Thailand, 2024 (EI).</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10907563" target="_blank">paper</a></p>
-
-            <!-- Bootstrap Carousel for Image Auto-Play -->
-            <div id="researchProjectsCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+             <p><strong> Commissioned by China General Nuclear Power Group Shanwei Laboratory| Project Team Student Leader --- 2023 - Preseant  </p>
+             <p><strong>Description:</strong> Offshore operations are vulnerable to the ship disturbance caused by waves. To improve the accuracy of offshore equipment, ensure the safety of operation personne and increase the window for offshore operations. Designed a 6-DOF Stewart parallel platform based on UCU mechanism with a 3-DOF gangway to compensate for the wave motion disturbance. </p>
+             <p>1.Designed a  two-tiered Stewart platform as an experimental prototype.The lower Stewart platform is used as a motion simulator geneartor to provide wave motion for a variety of sea states ,and the upper platform is kept smooth by controlling the length of each branch chain to isolate vibrations.<p>
+             <p>2.Proposed an improved linear active disturbance reject control (ILADRC) with linear quadratic regulator (LQR) based on joint space to precisely control the chain limb in the 6UCU Stewart parallel mechanism, thus keeping the top platform stable.</p>
+             <p>3.Utilized LQR to replace the series PD control in the traditional LADRC to solve the problem of controller bandwidth and its stability is verified using the Lyapunov theory. Used the LESO to estimate and compensate for the total disturbance of system<p>
+             <p><strong>Achievement</strong> : <strong>Wenxuan Wang</strong>, Yang Zhang, Peng Xu*, Bing Li*. Linear active disturbance rejection control with linear quadratic regulator for Stewart platform in active wave compensation system. <strong>Applied Ocean Research,2025 (JCR Q1).</strong> <a href="https://www.sciencedirect.com/science/article/pii/S0141118725000574">paper</a> </p>
+             <p> <strong>Wenxuan Wang</strong>, Xiaokai Cui, Peng Xu*, Bing Li*. An improved linear quadratic regulator of shipborne Stewart platform for wave compensation, <strong>IEEE International Conference on Robotics and Biomimetics, Bangkok, Thailand,2024 (EI).</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10907563" target="blank">paper</a> </p>
+             <!-- Bootstrap Carousel for Image Auto-Play -->
+             <div id="researchProjectsCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <!-- Indicators (Optional) -->
                 <ol class="carousel-indicators">
                     <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="0" class="active"></li>
                     <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="1"></li>
@@ -211,36 +215,105 @@
                     <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="3"></li>
                     <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="4"></li>
                     <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="7"></li>
+                    <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="8"></li>
+           
                 </ol>
+                <!-- Carousel Inner -->
                 <div class="carousel-inner">
+                    <!-- First Image -->
                     <div class="carousel-item active">
-                        <img src="static/assets/img/Stewart.jpg" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+                        <img src="static/assets/img/Stewart.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
                     </div>
+
+                     
+                     <!-- Fifth Image -->
+                     <div class="carousel-item">
+                        <img src="static/assets/img/project1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                     <!-- sixth Image -->
+                     <div class="carousel-item">
+                        <img src="static/assets/img/Re-Figure3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                    <!-- seventh Image -->
                     <div class="carousel-item">
-                        <img src="static/assets/img/project1.jpg" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <img src="static/assets/img/Re-Figure2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
                     </div>
+
+                    <!-- seventh Image -->
                     <div class="carousel-item">
-                        <img src="static/assets/img/Re-Figure3.jpg" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <img src="static/assets/img/project1-4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
                     </div>
-                    <!-- Add more carousel items here -->
+
+                    <!-- seventh Image -->
+                    <div class="carousel-item">
+                        <img src="static/assets/img/project1-5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+
+                    <!-- seventh Image -->
+                    <div class="carousel-item">
+                        <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+
+                      <!-- seventh Image -->
+                      <div class="carousel-item">
+                        <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                          
+                        </div>
+                    </div>
+                  
+                      <!-- seventh Image -->
+                      <div class="carousel-item">
+                        <img src="static/assets/img/RE-Fig.16.c Y.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <!-- Add more carousel items as needed for each image -->
                 </div>
+
+                <!-- Carousel Controls (Optional) -->
                 <a class="carousel-control-prev" href="#researchProjectsCarousel2" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </a>
+
                 <a class="carousel-control-next" href="#researchProjectsCarousel2" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </a>
             </div>
-
-            <!-- Video Section -->
-            <section id="video-section-1" class="bg-light" style="margin-top: 5px;">
+                
+             <!-- Add video below the carousel -->
+             <section id="video-section" class="bg-light" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
-                        <h3>6-DOF Stabilized Platform Control (Vibration Isolation, Motion Compensation)</h3>
+                        <h3> 6-DOF Stabilized Platform control (vibration isolation, motion compensation)</h3>
                     </header>
                     <div class="main-body d-flex justify-content-center">
+                        <!-- Video Embed -->
                         <video controls autoplay muted style="max-width: 800px; width: 100%;">
                             <source src="static/assets/video/33.mp4" type="video/mp4">
                             <source src="static/assets/video/platform_simulation.mp4" type="video/mp4">
@@ -249,13 +322,14 @@
                     </div>
                 </div>
             </section>
-
-            <section id="video-section-2" class="bg-light" style="margin-top: 5px;">
+            <!-- Add video below the carousel -->
+            <section id="video-section" class="bg-light" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
-                        <h3>Motion Simulation - Compensated Platform Simulation (Real-time Calculations)</h3>
+                        <h3> Motion Simulation - Compensated platform simulation (real-time calculations) </h3>
                     </header>
                     <div class="main-body d-flex justify-content-center">
+                        <!-- Video Embed -->
                         <video controls autoplay muted style="max-width: 800px; width: 100%;">
                             <source src="static/assets/video/platform_simulation.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -263,13 +337,14 @@
                     </div>
                 </div>
             </section>
-
-            <section id="video-section-3" class="bg-light" style="margin-top: 5px;">
+             <!-- Add video below the carousel -->
+             <section id="video-section" class="bg-light" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
                         <h2>Project 1 Video</h2>
                     </header>
                     <div class="main-body d-flex justify-content-center">
+                        <!-- Video Embed -->
                         <video controls autoplay muted style="max-width: 800px; width: 100%;">
                             <source src="static/assets/video/project23-video.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -277,10 +352,6 @@
                     </div>
                 </div>
             </section>
-        </div>
-    </div>
-</section>
-
 
             <h3>Project 2: Hybrid variable stiffness collaborative robot for abrasive machining. (Postgraduate stage)</h3>
              <p><strong>Members</strong>: Zhisen Li, <strong>Wenxuan Wang</strong>, Chenghao Huang, Kun Chen, Shen Xu,Bin Li*, Peng Xu*. --- Dec.2023 - Sept.2024</p>
