@@ -6,7 +6,7 @@ He is currently pursuing a Master's Degree in Mechanical Engineering at <a href=
 He is an outstanding mechanical and hardware engineer, and a decent programmer. Based on his past experiences and insights, his research interests focus on robotics, motion control electronics, medicine, human-computer interaction, modelling, and machine learning. <a href="static/assets/CV-Wenxuan Wang.pdf" target="_blank">His CV</a>.
 
 #### Email
-23S053031@stu.hit.edu.cn 
+wxwang@stu.hit.edu.cn 
 
 wenxuan.hitsz@gmail.com 
 
