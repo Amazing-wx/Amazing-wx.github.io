@@ -1,8 +1,9 @@
 #### Honour
 - <strong>100 Outstanding National Scholarship Representatives</strong> (only 100 a year in China) |Published in People's Daily 2022.5.4\
-The link to the award story is below:\
-<a href="static/assets/5.pdf" target="_blank">Bulletin 5 of People's Daily in 2022.5.4</a>.\
-<a href="static/assets/6.pdf" target="_blank">Bulletin 6 of People's Daily in 2022.5.4</a>.\
+The link to the award story is below：\
+<a href="static/assets/5.pdf" target="_blank">Bulletin 5 of People's Daily in 2022.5.4</a>,
+<a href="static/assets/6.pdf" target="_blank">Bulletin 6 of People's Daily in 2022.5.4</a>
+
 <a href="https://baijiahao.baidu.com/s?id=1731994747390926132" target="_blank">Here's a link to the Gansu Province Recognition Report</a>.\
 <a href="https://www.lut.edu.cn/info/1062/97102.htm" target="_blank">Here's the link to the story on the school's official website</a>.
 
@@ -25,5 +26,5 @@ The link to the award story is below:\
 - <strong>National Second Prize </strong> of the 3rd China University Intelligent Robot Creative Competition, Dec.2020.
 - Bronze Award of the 7th China College Students “Internet+” Innovation and Entrepreneurship Competition,Dec.2021.
 - First Prize at the provincial level of the Chinese Mathematics Competitions, Dec.2020.
-- First Prize at the provincial level of the China Undergraduate Mathematical Contest in Modeling,Nov.2020.
+- First Prize at the provincial level of the China Undergraduate Mathematical Contest in Modeling, Nov.2020.
 - Honorable Mention of Mathematical Contest in Modeling, Apr.2021.
