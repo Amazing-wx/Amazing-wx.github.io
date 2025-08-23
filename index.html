@@ -28,6 +28,431 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+    
+    <!-- 布局优化样式 -->
+    <style>
+    /* 全局优化 */
+    body {
+        font-family: 'Mulish', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    /* 导航栏优化 */
+    .header {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: var(--h-title-color);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    /* 顶部区域优化 */
+    .top-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top-section::before {
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+    }
+
+    .top-section h2 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+        font-weight: 300;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* 头像优化 */
+    #avatar {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        z-index: 1000;
+    }
+
+    #avatar img {
+        border-radius: 50%;
+        border: 4px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #avatar img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* 章节标题优化 */
+    section header h2 {
+        position: relative;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+
+    section header h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--h-title-color), #6c757d);
+        border-radius: 2px;
+    }
+
+    /* 主要内容区域优化 */
+    section .main-body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    /* 项目卡片优化 */
+    .project-section {
+        background: #fff;
+        border-radius: 16px;
+        padding: 2.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .project-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .project-section h3 {
+        color: var(--h-title-color);
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #f0f0f0;
+    }
+
+    .project-section p {
+        margin-bottom: 1rem;
+        color: #555;
+        line-height: 1.8;
+    }
+
+    /* 轮播图优化 */
+    .carousel {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        margin: 2rem 0;
+    }
+
+    .carousel-item img {
+        transition: transform 0.3s ease;
+    }
+
+    .carousel-item:hover img {
+        transform: scale(1.02);
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+    }
+
+    /* 视频区域优化 */
+    .video-section {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border-radius: 16px;
+        padding: 2rem;
+        margin: 2rem 0;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .video-section header h3 {
+        color: var(--h-title-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .video-section video {
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 文本内容优化 */
+    .main-body h3 {
+        color: var(--h-title-color);
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin: 2rem 0 1rem 0;
+        padding-left: 1rem;
+        border-left: 4px solid var(--h-title-color);
+    }
+
+    .main-body p {
+        margin-bottom: 1.2rem;
+        color: #444;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    .main-body strong {
+        color: var(--h-title-color);
+        font-weight: 600;
+    }
+
+    .main-body a {
+        color: var(--h-title-color);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom-color 0.3s ease;
+    }
+
+    .main-body a:hover {
+        border-bottom-color: var(--h-title-color);
+    }
+
+    /* 背景渐变优化 */
+    .bg-gradient-primary-to-secondary-light {
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%) !important;
+    }
+
+    .bg-gradient-primary-to-secondary-gray {
+        background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%) !important;
+    }
+
+    /* 页脚优化 */
+    footer {
+        background: linear-gradient(135deg, var(--h-title-color), #2c3e50) !important;
+        color: white;
+        padding: 3rem 0;
+    }
+
+    footer a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: white;
+    }
+
+    /* 响应式优化 */
+    @media (max-width: 768px) {
+        .top-section {
+            min-height: 70vh;
+            padding: 5rem 0;
+        }
+        
+        #avatar {
+            position: relative;
+            top: 0;
+            right: 0;
+            transform: none;
+            text-align: center;
+            margin: 2rem auto;
+        }
+        
+        .project-section {
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        section header h2 {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+        
+        .main-body {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .top-section h2 {
+            font-size: 2rem;
+        }
+        
+        .project-section {
+            padding: 1rem;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    /* 滚动条优化 */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--h-title-color);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2c3e50;
+    }
+
+    /* 加载动画 */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* 间距优化 */
+    .mt5 {
+        margin-top: 5rem !important;
+    }
+
+    .md5 {
+        margin-bottom: 5rem !important;
+    }
+
+    /* 容器优化 */
+    .container {
+        max-width: 1400px;
+    }
+
+    /* 链接按钮样式 */
+    .btn-custom {
+        background: linear-gradient(135deg, var(--h-title-color), #2c3e50);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 25px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-custom:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        color: white;
+    }
+
+    /* 性能优化 */
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    /* 图片优化 */
+    img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+    /* 选择文本样式 */
+    ::selection {
+        background: var(--h-title-color);
+        color: white;
+    }
+
+    ::-moz-selection {
+        background: var(--h-title-color);
+        color: white;
+    }
+
+    /* 焦点样式 */
+    *:focus {
+        outline: 2px solid var(--h-title-color);
+        outline-offset: 2px;
+    }
+
+    /* 打印样式 */
+    @media print {
+        .header, #back-to-top, .carousel-control-prev, .carousel-control-next {
+            display: none !important;
+        }
+        
+        .project-section {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+    }
+    </style>
 
     <!-- Bootstrap core JS-->
     <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
@@ -76,11 +501,163 @@
     <script type="text/javascript" src="static/js/scripts.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
     
+    <!-- 布局优化脚本 -->
+    <script>
+    // 平滑滚动
+    document.addEventListener('DOMContentLoaded', function() {
+        // 为所有导航链接添加平滑滚动
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 添加滚动时的导航栏效果
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // 为项目卡片添加渐入动画
+        const projectSections = document.querySelectorAll('.project-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        projectSections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // 为轮播图添加悬停暂停功能
+        const carousels = document.querySelectorAll('.carousel');
+        carousels.forEach(carousel => {
+            carousel.addEventListener('mouseenter', function() {
+                const carouselInstance = bootstrap.Carousel.getInstance(this);
+                if (carouselInstance) {
+                    carouselInstance.pause();
+                }
+            });
+            
+            carousel.addEventListener('mouseleave', function() {
+                const carouselInstance = bootstrap.Carousel.getInstance(this);
+                if (carouselInstance) {
+                    carouselInstance.cycle();
+                }
+            });
+        });
+
+        // 为视频添加懒加载
+        const videos = document.querySelectorAll('video');
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const video = entry.target;
+                    video.style.opacity = '1';
+                    video.style.transform = 'scale(1)';
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        videos.forEach(video => {
+            video.style.opacity = '0';
+            video.style.transform = 'scale(0.95)';
+            video.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            videoObserver.observe(video);
+        });
+
+        // 隐藏加载动画
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1000);
+        }
+
+        // 回到顶部按钮功能
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            // 显示/隐藏按钮
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopButton.style.opacity = '1';
+                    backToTopButton.style.visibility = 'visible';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                    backToTopButton.style.visibility = 'hidden';
+                }
+            });
+
+            // 点击回到顶部
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // 悬停效果
+            backToTopButton.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-3px)';
+                this.style.boxShadow = '0 6px 20px rgba(0, 0, 0, 0.3)';
+            });
+
+            backToTopButton.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+            });
+        }
+    });
+    </script>
+    
     
 
 </head>
 
 <body id="page-top">
+    <!-- 页面加载动画 -->
+    <div id="loading-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, var(--h-title-color), #2c3e50); display: flex; justify-content: center; align-items: center; z-index: 9999; transition: opacity 0.5s ease;">
+        <div style="text-align: center; color: white;">
+            <div style="width: 50px; height: 50px; border: 3px solid rgba(255,255,255,0.3); border-top: 3px solid white; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+            <h3 style="margin: 0; font-weight: 300;">Loading...</h3>
+        </div>
+    </div>
+    
+    <style>
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    </style>
     <!-- Navigation-->
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
@@ -194,9 +771,10 @@
                     }
                     </style>
            </header>
-           <div class="main-body" id="researchs-md">
+                       <div class="main-body" id="researchs-md">
 
-            <h3>Project 1: Robot Perception and 3D Reconstruction - Robotics Algorithm Engineer (Intern) Qiaojie ShuWu Company | *Jul 2025 - Sep 2025*.</h3>
+             <div class="project-section">
+             <h3>Project 1: Robot Perception and 3D Reconstruction - Robotics Algorithm Engineer (Intern) Qiaojie ShuWu Company | *Jul 2025 - Sep 2025*.</h3>
             
             <p><strong>Description:</strong> Based on the collected RGB video streams, algorithms such as VGGT, DGGN-SLAM, Colmap, and 3D-GS were employed to achieve 3D reconstruction and high-fidelity rendering of indoor and outdoor scenes. The optimized mesh models were extracted and imported into Isaacsim to construct a simulation environment suitable for robot perception and navigation tasks </p>
             <p>1Developed and integrated 3D reconstruction algorithms (VGGT, DROID-SLAM, MegaSAM, Colmap, 3DGS) using RGB videos to achieve high-precision scene reconstruction.<p>
@@ -204,7 +782,7 @@
             <p>3.Independently conducted debugging and testing for multiple algorithms and authored comprehensive technical reports and reproduction documentation, delivering a reliable basis for the team's subsequent research.<p>
         
            <!-- Add video below the carousel -->
-           <section id="video-section2" class="bg-light" style="margin-top: 2px; margin-bottom: 2px;">
+                       <section id="video-section2" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
                <div class="container px-2">
                    <header>
                        <h3> COLMAP+3DGRUT </h3>
@@ -219,7 +797,7 @@
                </div>
            </section>
             <!-- Add video below the carousel -->
-            <section id="video-section3" class="bg-light" style="margin-top: 2px; margin-bottom: 2px;">
+            <section id="video-section3" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
                <div class="container px-2">
                    <header>
                        <h3> PGSR(COLMAP+3DGS+MESH) </h3>
@@ -234,7 +812,8 @@
                </div>
            </section>
 
-            <h3>Project 2: Design and Control of a Stabilization Platform Based on IMU and Visual Fusion (Postgraduate stage).</h3>
+                         <div class="project-section">
+             <h3>Project 2: Design and Control of a Stabilization Platform Based on IMU and Visual Fusion (Postgraduate stage).</h3>
              <p><strong> This work received  in a 2-million-RMB horizontal project sponsored by China Guangdong Nuclear Power Group (CGN), titled "Research on Motion Control of a Six-Degree-of-Freedom Stable Platform at Sea", and successfully secured a grant of 300,000 RMB from the Guangdong Province (Approval Number: 2023A1515240062).</p>
              <p><strong>Description:</strong> Offshore operations are vulnerable to the ship disturbance caused by waves. To improve the accuracy of offshore equipment, ensure the safety of operation personne and increase the window for offshore operations. Designed a 6-DOF Stewart parallel platformto compensate for the wave motion disturbance. </p>
              <p>1.Designed a doubled-motion platform based on the 6UCU Stewart parallel mechanism, where the bottom platform simulates
@@ -347,7 +926,7 @@
             </div>
                 
              <!-- Add video below the carousel -->
-             <section id="video-section1" class="bg-light" style="margin-top: 2px; margin-bottom: 2px;">
+             <section id="video-section1" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
                 <div class="container px-2">
                     <header>
                         <h3> 6-DOF Stabilized Platform control (vibration isolation, motion compensation)</h3>
@@ -362,7 +941,7 @@
                 </div>
             </section>
             <!-- Add video below the carousel -->
-            <section id="video-section2" class="bg-light" style="margin-top: 2px; margin-bottom: 2px;">
+            <section id="video-section2" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
                 <div class="container px-2">
                     <header>
                         <h3> Motion Simulation - Compensated platform simulation (real-time calculations) </h3>
@@ -377,7 +956,7 @@
                 </div>
             </section>
              <!-- Add video below the carousel -->
-             <section id="video-section3" class="bg-light" style="margin-top: 2px; margin-bottom: 2px;">
+             <section id="video-section3" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
                 <div class="container px-2">
                     <header>
                         <h3>Prototypes and experiments</h3>
@@ -392,7 +971,8 @@
                 </div>
             </section>
 
-            <h3>Project 3: Hybrid variable stiffness collaborative robot for abrasive machining. (Postgraduate stage)</h3>
+                         <div class="project-section">
+             <h3>Project 3: Hybrid variable stiffness collaborative robot for abrasive machining. (Postgraduate stage)</h3>
              <p><strong>Members</strong>: Zhisen Li, <strong>Wenxuan Wang</strong>, Chenghao Huang, Kun Chen, Shen Xu,Bin Li*, Peng Xu*. --- Dec.2023 - Sept.2024</p>
              <p><strong>Description:</strong> Designed a hybrid variable stiffness collaborative robot for grinding of complex curved components. The hybrid robot combines the high stiffness and high load capacity of parallel robots and the large workspace characteristics of tandem robots to perform a larger range of actions while maintaining structural stability.</p>
              <p> 1.A variable stiffness joint based on a rope-pulley mechanism is proposed with the goal of high compactness and high torque density. The compact and modular design of the joint structure optimises the space utilisation of the robot.</p>
@@ -495,7 +1075,7 @@
             </div>
              
              <!-- Add video below the carousel -->
-            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+            <section id="video-section" class="video-section" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
                         <h2>Project 2 Video</h2>
@@ -510,6 +1090,7 @@
                 </div>
             </section>
 
+             <div class="project-section">
              <h3>Project 4: National Undergraduate Training Program for Innovation and Entrepreneurship: 'Core Traffic' -Designed of A New Type of Traffic Direction Robot (Project Number:202210731019--- Undergraduate period)</h3>
              <p><strong>Members</strong>: <strong>Wenxuan Wang</strong>, Zixiang Nie, Zhenyu Chen, Huipeng He, Chaolei Pang, Shijun Hu*. --- Jan.2022 - Jan.2023</p> 
              <p><strong>Description:</strong> To enhance operational efficiency and reduce safety incidents in traffic police work, we designed a mobile intelligent robot that integrates robotic technology with traffic management. This robot can operate continuously for 24 hours, addressing the safety risks traffic police face due to fatigue, particularly during night shifts. The robot's mechanical structure consists of three main components: the body, robotic arm, and chassis.</p>
@@ -588,7 +1169,7 @@
                 
 
             <!-- Add video below the carousel -->
-            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+            <section id="video-section" class="video-section" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
                         <h2>Project 3 Video</h2>
@@ -604,6 +1185,7 @@
             </section>
             
              
+            <div class="project-section">
             <h3>Project 5: A Bionic Ant Robot for Rescue with Arduino chip  (Undergraduate period)</h3>
             <p><strong>Members</strong>: <strong>Wenxuan Wang</strong>, Xinyue he, Chaolei Pang, Dongya Yang*. --- Oct.2021 - Jun.2022</p>
             <p><strong>Description:</strong> Bio-inspired ant robots enhance rescue efficiency in confined or hazardous areas (e.g., earthquakes, collapses) through swarm intelligence and adaptability, reducing risks for human responders.  </p>
@@ -660,7 +1242,7 @@
            </div>
             
                <!-- Add video below the carousel -->
-           <section id="video-section" class="bg-light" style="margin-top: 5px;">
+           <section id="video-section" class="video-section" style="margin-top: 5px;">
                <div class="container px-5">
                    <header>
                        <h2>Project 4 Video</h2>
@@ -674,7 +1256,9 @@
                    </div>
                </div>
            </section>
+           </div>
 
+             <div class="project-section">
              <h3>Project 6: National Undergraduate Training Program for Innovation and Entrepreneurship: Smart Home Security Robot (Project Number:202110731012---Undergraduate period)</h3>
              <p><strong>Members</strong>: <strong>Wenxuan Wang</strong>, Chongzheng Zhang, Wenhui Cai, Huipeng He,Shuzhen Zhang*. --- Oct.2021 - Jun.2022</p>
              <p><strong>Description:</strong> Empty nesters have become a growing concern in our country, with numerous accidents occurring each year due to the unexpected deaths of elderly individuals living alone. To address the safety issues faced by seniors living independently, we designed a smart home safety and security robot utilizing Arduino, ESP8266 WiFi, and the HC-05 Bluetooth module. This robot offers various features including home security threat detection, smoke alarms, voice recognition, visual tracking, human-machine interaction, and intelligent waste collection, enhancing overall home safety for elderly individuals.</p>
@@ -761,7 +1345,7 @@
             </div>
              
                 <!-- Add video below the carousel -->
-            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+            <section id="video-section" class="video-section" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
                         <h2>Project 5 Video</h2>
@@ -781,6 +1365,7 @@
              
 
              
+             <div class="project-section">
              <h3>Project 7:National Undergraduate Training Program for Innovation and Entrepreneurship: Intelligent Delivery Robot Based on Embedded Management (Project Number:202110731014 ---Undergraduate period)</h3>
              <p><strong>Members:</strong>Chaolei Pang<strong>, Wenxuan Wang</strong>, Mingfei Qing, Bowen Zhou, Xiangwan Ye, Dongya Yang*.--- Oct 2021 - June 2022</p>
              <p><strong>Description:</strong> Researched and developed an intelligent courier delivery robot based on an embedded management system, capable of climbing stairs. By utilizing triangular track wheels, the robot overcomes the limitation of current delivery vehicles that cannot navigate stairs. Additionally, a database was integrated to manage back-end logistics information, combining hardware and software to achieve efficient delivery operations.</p>
@@ -883,7 +1468,7 @@
             </div>
              
              <!-- Add video below the carousel -->
-            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+            <section id="video-section" class="video-section" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
                         <h2>Project 6 Video</h2>
@@ -898,7 +1483,8 @@
                 </div>
             </section>
 
-            <h3>Project 8: A Multifunctional Robot for Mine Rehabilitation Grass Laying(Undergraduate period)</h3>
+                         <div class="project-section">
+             <h3>Project 8: A Multifunctional Robot for Mine Rehabilitation Grass Laying(Undergraduate period)</h3>
              <p><strong>Members:</strong> <strong>Wenxuan Wang</strong>, Hongchang Zhao, Chaolei Pang, Huipeng He, Tianchi Wang, Yuan He*.--- June 2020 - June 2021</p>
              <p><strong>Description:</strong> Developed an ecosystem restoration robot for mine rehabilitation and landslide management, capable of performing multiple functions including drilling, pouring, laying, and spraying grass seeds. This robot facilitates the process of mulching and vegetation restoration in degraded areas.</p>
              <p>1. Led the design and machining of the overall mechanical structure, including model animation, chassis motion control, and robotic arm drilling functions.</p>
@@ -982,7 +1568,7 @@
             </div>
              
              <!-- Add video below the carousel -->
-            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+            <section id="video-section" class="video-section" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
                         <h2>Project 7 Video</h2>
@@ -998,6 +1584,7 @@
             </section>
 
 
+             <div class="project-section">
              <h3>Project 9: National Engineering Training Comprehensive Ability Competition for College Students - Intelligent Logistics Handling Track (Undergraduate period)</h3>
              <p><strong>Memebers:</strong> <strong>Wenxuan Wang</strong>, Xiangseng Kong, Chaolei Pang, Huipeng He, Dongya Yang*.--- Dec 2020 - July 2021</p> 
              <p><strong>Description:</strong> Designed an autonomous trolley capable of completing material handling tasks within a given field. By scanning QR codes to identify the logistics sequence, the robot autonomously determines the appropriate materials to transport and delivers them to the designated areas.</p>
@@ -1081,7 +1668,7 @@
 
              
              <!-- Add video below the carousel -->
-            <section id="video-section" class="bg-light" style="margin-top: 5px;">
+            <section id="video-section" class="video-section" style="margin-top: 5px;">
                 <div class="container px-5">
                     <header>
                         <h2>Project 8 Video</h2>
@@ -1094,11 +1681,13 @@
                         </video>
                     </div>
                 </div>
-            </section>
+                         </section>
+             </div>
+             </div>
 
-            </div>
-         </div>
-      </section>
+             </div>
+          </div>
+       </section>
     <!-- Researchs -->
        
     <!-- Footer-->
@@ -1112,6 +1701,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" style="position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: linear-gradient(135deg, var(--h-title-color), #2c3e50); color: white; border: none; border-radius: 50%; cursor: pointer; opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 1000; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);">
+        <i class="bi bi-arrow-up" style="font-size: 1.2rem;"></i>
+    </button>
 
 </body>
 
