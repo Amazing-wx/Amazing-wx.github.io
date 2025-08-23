@@ -160,8 +160,11 @@
         padding: 2.5rem;
         margin: 2rem 0;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transition: all 0.6s ease;
         border: 1px solid rgba(0, 0, 0, 0.05);
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
     }
 
     .project-section:hover {
@@ -547,9 +550,7 @@
         });
 
         projectSections.forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            // 添加渐入动画效果，但不强制设置透明度
             observer.observe(section);
         });
 
@@ -811,8 +812,9 @@
                    </div>
                </div>
            </section>
+             </div>
 
-                         <div class="project-section">
+             <div class="project-section">
              <h3>Project 2: Design and Control of a Stabilization Platform Based on IMU and Visual Fusion (Postgraduate stage).</h3>
              <p><strong> This work received  in a 2-million-RMB horizontal project sponsored by China Guangdong Nuclear Power Group (CGN), titled "Research on Motion Control of a Six-Degree-of-Freedom Stable Platform at Sea", and successfully secured a grant of 300,000 RMB from the Guangdong Province (Approval Number: 2023A1515240062).</p>
              <p><strong>Description:</strong> Offshore operations are vulnerable to the ship disturbance caused by waves. To improve the accuracy of offshore equipment, ensure the safety of operation personne and increase the window for offshore operations. Designed a 6-DOF Stewart parallel platformto compensate for the wave motion disturbance. </p>
