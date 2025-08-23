@@ -25,7 +25,7 @@ The link to the award story is below：\
 - <strong>National Second Prize</strong>  of the 17th Embedded Artificial Intelligence Competition for Students, Dec.2021.
 - <strong>National Second Prize </strong> of the 3rd China University Intelligent Robot Creative Competition, Dec.2020.
 - <strong>National Third Prize </strong> of the 7th China College Students “Internet+” Innovation and Entrepreneurship Competition,Dec.2021.
-- <strong>National Third Prize </strong> of the 6th Graduate Robot Innovation and Design Competition.
+- <strong>National Third Prize </strong> of the 6th Graduate Robot Innovation and Design Competition. Dec.2024
 - First Prize at the provincial level of the China Undergraduate Mathematical Contest in Modeling, Nov.2020.
 - Honorable Mention of Mathematical Contest in Modeling, Apr.2021.
 
