@@ -56,16 +56,27 @@ window.addEventListener('DOMContentLoaded', event => {
     // Marked
     marked.use({ mangle: false, headerIds: false })
     section_names.forEach((name, idx) => {
+        console.log('Loading section:', name);
         fetch(content_dir + name + '.md')
-            .then(response => response.text())
+            .then(response => {
+                console.log('Response for', name, ':', response.status, response.statusText);
+                return response.text();
+            })
             .then(markdown => {
+                console.log('Markdown content for', name, ':', markdown.substring(0, 200) + '...');
                 const html = marked.parse(markdown);
-                document.getElementById(name + '-md').innerHTML = html;
+                const element = document.getElementById(name + '-md');
+                if (element) {
+                    element.innerHTML = html;
+                    console.log('Successfully loaded', name, 'section');
+                } else {
+                    console.log('Element not found for', name + '-md');
+                }
             }).then(() => {
                 // MathJax
                 MathJax.typeset();
             })
-            .catch(error => console.log(error));
+            .catch(error => console.log('Error loading', name, ':', error));
     })
 
 }); 

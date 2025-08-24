@@ -1,4 +1,6 @@
 
+## 研究项目
+
 <h3>Project 1: Robot Perception and 3D Reconstruction - Robotics Algorithm Engineer (Intern) Qiaojie ShuWu Company | *Jul 2025 - Sep 2025*.</h3>
 
 <p><strong>Description:</strong> Based on the collected RGB video streams, algorithms such as VGGT, DGGN-SLAM, Colmap, and 3D-GS were employed to achieve 3D reconstruction and high-fidelity rendering of indoor and outdoor scenes. The optimized mesh models were extracted and imported into Isaacsim to construct a simulation environment suitable for robot perception and navigation tasks </p>
@@ -7,7 +9,6 @@
 <p>3.Independently conducted debugging and testing for multiple algorithms and authored comprehensive technical reports and reproduction documentation, delivering a reliable basis for the team's subsequent research.<p>
 
 <!-- Add video below the carousel -->
-        <section id="video-section2" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
 <div class="container px-2">
     <header>
         <h3> COLMAP+3DGRUT </h3>
@@ -69,7 +70,7 @@
     <div class="carousel-inner">
         <!-- First Image -->
         <div class="carousel-item active">
-            <img src="static/assets/img/Stewart.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/Stewart.jpg" class="d-block mx-auto w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -78,21 +79,21 @@
         
         <!-- Fifth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project1.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- sixth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/Re-Figure3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/Re-Figure3.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/Re-Figure2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/Re-Figure2.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -100,7 +101,7 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project1-4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project1-4.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
