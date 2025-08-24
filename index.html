@@ -81,10 +81,20 @@
         justify-content: center;
         position: relative;
         overflow: hidden;
+        background-size: 120% 120%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .top-section::before {
-        background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+        z-index: 1;
     }
 
     .top-section h2 {
@@ -317,6 +327,11 @@
             margin: 2rem auto;
         }
         
+        #avatar img {
+            width: 200px;
+            height: 200px;
+        }
+        
         .project-section {
             padding: 1.5rem;
             margin: 1rem 0;
@@ -420,11 +435,36 @@
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
     }
+    
+    /* 硬件加速 */
+    .project-section,
+    .carousel,
+    .video-section,
+    #avatar img {
+        will-change: transform;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
+    
+    /* 减少重绘 */
+    .top-section {
+        will-change: background-position;
+    }
 
     /* 图片优化 */
     img {
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
+        transition: opacity 0.3s ease;
+    }
+    
+    /* 图片懒加载 */
+    img[data-src] {
+        opacity: 0;
+    }
+    
+    img[data-src].loaded {
+        opacity: 1;
     }
 
     /* 选择文本样式 */
@@ -554,6 +594,29 @@
             observer.observe(section);
         });
 
+        // 图片懒加载
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.classList.add('loaded');
+                        img.removeAttribute('data-src');
+                        imageObserver.unobserve(img);
+                    }
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+
+        // 为所有图片添加懒加载
+        document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+        });
+
         // 为轮播图添加悬停暂停功能
         const carousels = document.querySelectorAll('.carousel');
         carousels.forEach(carousel => {
@@ -572,7 +635,7 @@
             });
         });
 
-        // 为视频添加懒加载
+        // 为视频添加懒加载和性能优化
         const videos = document.querySelectorAll('video');
         const videoObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -580,6 +643,11 @@
                     const video = entry.target;
                     video.style.opacity = '1';
                     video.style.transform = 'scale(1)';
+                    
+                    // 预加载视频元数据
+                    if (video.readyState === 0) {
+                        video.load();
+                    }
                 }
             });
         }, {
@@ -587,9 +655,22 @@
         });
 
         videos.forEach(video => {
+            // 设置视频性能优化
+            video.preload = 'metadata';
             video.style.opacity = '0';
             video.style.transform = 'scale(0.95)';
             video.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            
+            // 添加错误处理
+            video.addEventListener('error', function() {
+                console.log('Video loading error:', video.src);
+            });
+            
+            // 添加加载完成事件
+            video.addEventListener('loadedmetadata', function() {
+                console.log('Video metadata loaded:', video.src);
+            });
+            
             videoObserver.observe(video);
         });
 
@@ -600,8 +681,8 @@
                 loadingScreen.style.opacity = '0';
                 setTimeout(() => {
                     loadingScreen.style.display = 'none';
-                }, 500);
-            }, 1000);
+                }, 300);
+            }, 500);
         }
 
         // 回到顶部按钮功能

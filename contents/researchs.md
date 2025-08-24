@@ -14,7 +14,7 @@
     </header>
     <div class="main-body d-flex justify-content-center">
         <!-- Video Embed -->
-        <video controls autoplay muted style="max-width: 800px; width: 100%;">
+        <video controls autoplay muted preload="metadata" style="max-width: 800px; width: 100%;">
             <source src="static/assets/video/3DGS.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -29,7 +29,7 @@
     </header>
     <div class="main-body d-flex justify-content-center">
         <!-- Video Embed -->
-        <video controls autoplay muted style="max-width: 800px; width: 100%;">
+        <video controls autoplay muted preload="metadata" style="max-width: 800px; width: 100%;">
             <source src="static/assets/video/staris.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -159,10 +159,10 @@
         </header>
         <div class="main-body d-flex justify-content-center">
             <!-- Video Embed -->
-            <video controls autoplay muted style="max-width: 800px; width: 100%;">
-                <source src="static/assets/video/wave-comensation.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+                    <video controls autoplay muted preload="metadata" style="max-width: 800px; width: 100%;">
+            <source src="static/assets/video/wave-comensation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         </div>
     </div>
 </section>
