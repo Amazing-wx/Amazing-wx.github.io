@@ -1,107 +1,808 @@
-## 研究项目
 
-### Project 1: Robot Perception and 3D Reconstruction - Robotics Algorithm Engineer (Intern) Qiaojie ShuWu Company | *Jul 2025 - Sep 2025*
+<h3>Project 1: Robot Perception and 3D Reconstruction - Robotics Algorithm Engineer (Intern) Qiaojie ShuWu Company | *Jul 2025 - Sep 2025*.</h3>
 
-**描述:** 基于收集的RGB视频流，采用VGGT、DGGN-SLAM、Colmap和3D-GS等算法实现室内外场景的3D重建和高保真渲染。提取优化后的网格模型并导入Isaacsim构建适合机器人感知和导航任务的仿真环境。
+<p><strong>Description:</strong> Based on the collected RGB video streams, algorithms such as VGGT, DGGN-SLAM, Colmap, and 3D-GS were employed to achieve 3D reconstruction and high-fidelity rendering of indoor and outdoor scenes. The optimized mesh models were extracted and imported into Isaacsim to construct a simulation environment suitable for robot perception and navigation tasks </p>
+<p>1Developed and integrated 3D reconstruction algorithms (VGGT, DROID-SLAM, MegaSAM, Colmap, 3DGS) using RGB videos to achieve high-precision scene reconstruction.<p>
+<p>2.Applied PGSR to extract mesh models and built simulation datasets in Isaac Sim for robot perception tasks.</p>
+<p>3.Independently conducted debugging and testing for multiple algorithms and authored comprehensive technical reports and reproduction documentation, delivering a reliable basis for the team's subsequent research.<p>
 
-1. 开发并集成3D重建算法（VGGT、DROID-SLAM、MegaSAM、Colmap、3DGS），使用RGB视频实现高精度场景重建。
-2. 应用PGSR提取网格模型并在Isaac Sim中构建机器人感知任务的仿真数据集。
-3. 独立进行多种算法的调试和测试，撰写全面的技术报告和复现文档，为团队后续研究提供可靠基础。
+<!-- Add video below the carousel -->
+        <section id="video-section2" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
+<div class="container px-2">
+    <header>
+        <h3> COLMAP+3DGRUT </h3>
+    </header>
+    <div class="main-body d-flex justify-content-center">
+        <!-- Video Embed -->
+        <video controls autoplay muted style="max-width: 800px; width: 100%;">
+            <source src="static/assets/video/3DGS.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+</section>
+<!-- Add video below the carousel -->
+<section id="video-section3" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
+<div class="container px-2">
+    <header>
+        <h3> PGSR(COLMAP+3DGS+MESH) </h3>
+    </header>
+    <div class="main-body d-flex justify-content-center">
+        <!-- Video Embed -->
+        <video controls autoplay muted style="max-width: 800px; width: 100%;">
+            <source src="static/assets/video/staris.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+</section>
+</div>
 
-### Project 2: Design and Control of a Stabilization Platform Based on IMU and Visual Fusion (Postgraduate stage)
+<div class="project-section">
+<h3>Project 2: Design and Control of a Stabilization Platform Based on IMU and Visual Fusion (Postgraduate stage).</h3>
+<p><strong> This work received  in a 2-million-RMB horizontal project sponsored by China Guangdong Nuclear Power Group (CGN), titled "Research on Motion Control of a Six-Degree-of-Freedom Stable Platform at Sea", and successfully secured a grant of 300,000 RMB from the Guangdong Province (Approval Number: 2023A1515240062).</p>
+<p><strong>Description:</strong> Offshore operations are vulnerable to the ship disturbance caused by waves. To improve the accuracy of offshore equipment, ensure the safety of operation personne and increase the window for offshore operations. Designed a 6-DOF Stewart parallel platformto compensate for the wave motion disturbance. </p>
+<p>1.Designed a doubled-motion platform based on the 6UCU Stewart parallel mechanism, where the bottom platform simulates
+    wave motion and the top platform is stabilized by controlling the length of six limbs to isolate the vibration of waves. Completed
+    the forward, inverse kinematic solution, workspace analysis, and control of 6UCU Stewart parallel.<p>
+<p>2.Proposed an improved linear active disturbance reject control (ILADRC) based on linear quadratic regulator (LQR) in joint space for each chain electric-driven actuator (PMSM) to achieve accurate stabilization of the top platform.</p>
+<p>3.Utilized LQR to replace the series PD control in the traditional LADRC to solve the problem of controller bandwidth and its stability is verified using the Lyapunov theory. Used the LESO to estimate and compensate for the total disturbance of system. Verified the proposed controller ILADRC with the Lyapunov theory. Solved the problem of overshooting and oscillation of traditional PI control, and improved the anti-disturbance ability of the system.</p>
+<p><strong>Achievement</strong> : <strong>Wenxuan Wang</strong>, Yang Zhang, Peng Xu*, Bing Li*. Linear active disturbance rejection control with linear quadratic regulator for Stewart platform in active wave compensation system. <strong>Applied Ocean Research,2025 (JCR Q1).</strong> <a href="https://www.sciencedirect.com/science/article/pii/S0141118725000574">paper</a> </p>
+<p> <strong>Wenxuan Wang</strong>, Xiaokai Cui, Peng Xu*, Bing Li*. An improved linear quadratic regulator of shipborne Stewart platform for wave compensation, <strong>IEEE International Conference on Robotics and Biomimetics, Bangkok, Thailand,2024 (EI).</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10907563" target="blank">paper</a> </p>
 
-**项目背景:** 本工作获得了中国广东核电集团（CGN）200万元横向项目"海上六自由度稳定平台运动控制研究"的资助，并成功获得广东省30万元资助（批准号：2023A1515240062）。
+<!-- Bootstrap Carousel for Image Auto-Play -->
+<div id="researchProjectsCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <!-- Indicators (Optional) -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="5"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="6"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="7"></li>
+        <li data-bs-target="#researchProjectsCarousel2" data-bs-slide-to="8"></li>
 
-**描述:** 海上作业容易受到波浪引起的船舶扰动影响。为了提高海上设备的精度，确保作业人员安全并增加海上作业窗口，设计了6-DOF Stewart并联平台来补偿波浪运动扰动。
+    </ol>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+        <!-- First Image -->
+        <div class="carousel-item active">
+            <img src="static/assets/img/Stewart.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-1. 基于6UCU Stewart并联机构设计了双运动平台，其中底部平台模拟波浪运动，顶部平台通过控制六个支链长度来隔离波浪振动。完成了6UCU Stewart并联的正逆运动学求解、工作空间分析和控制。
-2. 提出了一种基于线性二次调节器（LQR）的改进线性主动干扰抑制控制（ILADRC），用于每个链式电驱动执行器（PMSM）的关节空间，以实现顶部平台的精确稳定。
-3. 利用LQR替代传统LADRC中的串联PD控制，解决了控制器带宽问题，并使用Lyapunov理论验证了其稳定性。使用LESO估计和补偿系统的总干扰。使用Lyapunov理论验证了所提出的控制器ILADRC。解决了传统PI控制的超调和振荡问题，提高了系统的抗干扰能力。
+        
+        <!-- Fifth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- sixth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/Re-Figure3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/Re-Figure2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-**成果:**
-- **Wenxuan Wang**, Yang Zhang, Peng Xu*, Bing Li*. Linear active disturbance rejection control with linear quadratic regulator for Stewart platform in active wave compensation system. **Applied Ocean Research,2025 (JCR Q1).** [论文](https://www.sciencedirect.com/science/article/pii/S0141118725000574)
-- **Wenxuan Wang**, Xiaokai Cui, Peng Xu*, Bing Li*. An improved linear quadratic regulator of shipborne Stewart platform for wave compensation, **IEEE International Conference on Robotics and Biomimetics, Bangkok, Thailand,2024 (EI).** [论文](https://ieeexplore.ieee.org/abstract/document/10907563)
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project1-4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-### Project 3: Hybrid variable stiffness collaborative robot for abrasive machining. (Postgraduate stage)
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project1-5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-**成员:** Zhisen Li, **Wenxuan Wang**, Chenghao Huang, Kun Chen, Shen Xu,Bin Li*, Peng Xu*. --- Dec.2023 - Sept.2024
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-**描述:** 设计了用于复杂曲面组件磨削的混合变刚度协作机器人。混合机器人结合了并联机器人的高刚度和高负载能力以及串联机器人的大工作空间特性，在保持结构稳定性的同时执行更大范围的动作。
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+    
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/RE-Fig.16.c Y.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <!-- Add more carousel items as needed for each image -->
+    </div>
 
-1. 提出了一种基于绳轮机构的变刚度关节，目标是高紧凑性和高扭矩密度。关节结构的紧凑模块化设计优化了机器人的空间利用率。
-2. 提出了一种新颖的二转一移3-DOF冗余并联末端机构"2UPR-2RRU"，并对并联末端机构进行了轻量化结构设计。
-3. 开发了一种改进的LADRC，通过引入指数函数来补偿不确定干扰引起的位置误差，提高执行器性能。在传统自适应阻抗系统的自适应项中引入模糊逻辑环，提出了一种基于模糊推理规则的模糊自适应导纳控制器，解决了磨削力跟踪过程中的力超调问题。
+    <!-- Carousel Controls (Optional) -->
+    <a class="carousel-control-prev" href="#researchProjectsCarousel2" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
 
-**成果:** [第六届研究生机器人创新设计大赛全国三等奖](static/assets/Third.pdf)
+    <a class="carousel-control-next" href="#researchProjectsCarousel2" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+    
+<!-- Add video below the carousel -->
+<section id="video-section1" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
+    <div class="container px-2">
+        <header>
+            <h3> 6-DOF Stabilized Platform control (vibration isolation, motion compensation)</h3>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/wave-comensation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+<!-- Add video below the carousel -->
+<section id="video-section2" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
+    <div class="container px-2">
+        <header>
+            <h3> Motion Simulation - Compensated platform simulation (real-time calculations) </h3>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/platform_simulation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+<!-- Add video below the carousel -->
+<section id="video-section3" class="video-section" style="margin-top: 2px; margin-bottom: 2px;">
+    <div class="container px-2">
+        <header>
+            <h3>Prototypes and experiments</h3>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/33.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
 
-### Project 4: National Undergraduate Training Program for Innovation and Entrepreneurship: 'Core Traffic' -Designed of A New Type of Traffic Direction Robot (Project Number:202210731019--- Undergraduate period)
+            <div class="project-section">
+<h3>Project 3: Hybrid variable stiffness collaborative robot for abrasive machining. (Postgraduate stage)</h3>
+<p><strong>Members</strong>: Zhisen Li, <strong>Wenxuan Wang</strong>, Chenghao Huang, Kun Chen, Shen Xu,Bin Li*, Peng Xu*. --- Dec.2023 - Sept.2024</p>
+<p><strong>Description:</strong> Designed a hybrid variable stiffness collaborative robot for grinding of complex curved components. The hybrid robot combines the high stiffness and high load capacity of parallel robots and the large workspace characteristics of tandem robots to perform a larger range of actions while maintaining structural stability.</p>
+<p> 1.A variable stiffness joint based on a rope-pulley mechanism is proposed with the goal of high compactness and high torque density. The compact and modular design of the joint structure optimises the space utilisation of the robot.</p>
+<p> 2.Proposed a novel two-rotation-one-translation 3-DOF redundant parallel end mechanism '2UPR-2RRU" , and a lightweight structural design of the parallel end mechanism is carried out. </p>
+<p> 3.Developed An improved LADRC to compensate the position error caused by uncertain disturbance by introducing an exponential function to improve the performance of the actuator. A fuzzy logic loop is introduced into the adaptive term of the traditional adaptive impedance system, and a fuzzy adaptive conductance controller based on fuzzy inference rules is proposed to solve the force overshooting problem in the grinding force tracking process.</p> 
+<p> <strong>Achievement</strong> : <a href="static/assets/Third.pdf" target="_blank">National Third Prize of the 6th Postgraduate Robot Innovation and Design Competition</a>.</p>
+<!-- Bootstrap Carousel for Image Auto-Play -->
+<div id="researchProjectsCarousel4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <!-- Indicators (Optional) -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#researchProjectsCarousel4" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel4" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel4" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel4" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel4" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel4" data-bs-slide-to="5"></li>
+        <li data-bs-target="#researchProjectsCarousel4" data-bs-slide-to="5"></li>
+    
+    </ol>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+        <!-- First Image -->
+        <div class="carousel-item active">
+            <img src="static/assets/img/4-model (1).jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-**成员:** **Wenxuan Wang**, Zixiang Nie, Zhenyu Chen, Huipeng He, Chaolei Pang, Shijun Hu*. --- Jan.2022 - Jan.2023
+        <!-- Fifth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- sixth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/4-model (2).jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/4-model (6).jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+    
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/3.1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
 
-**描述:** 为了提高交警工作效率并减少安全事故，我们设计了一款集机器人技术与交通管理于一体的移动智能机器人。该机器人可以24小时连续运行，解决交警因疲劳特别是夜班期间面临的安全风险。机器人的机械结构由三个主要部分组成：机身、机械臂和底盘。
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/3.2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
 
-1. 基于STM32芯片设计了智能交通指挥机器人，配备两个7-DOF仿人机械臂和四个麦克纳姆轮用于移动。该机器人替代人类指挥交通，并作为移动电子警察。
-2. 通过调整PWM占空比控制机械臂运动，操纵每个舵机的旋转角度，使两个7-DOF机械臂能够准确复制交警手势信号。
-3. 在机械臂上安装摄像头，采用图像识别技术。结合麦克纳姆轮提供的移动性，机器人作为移动电子警察，能够捕捉交通违规行为，克服固定电子警察系统的局限性。
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/3.3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
 
-**成果:** 
-- [第23届中国机器人及人工智能大赛全国一等奖](static/assets/11.pdf)
-- [国际青年人工智能创新大赛全国一等奖](static/assets/22.pdf)
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/3.4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
 
-### Project 5: A Bionic Ant Robot for Rescue with Arduino chip (Undergraduate period)
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/3.5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+    
+        <!-- Add more carousel items as needed for each image -->
+    </div>
 
-**成员:** **Wenxuan Wang**, Xinyue he, Chaolei Pang, Dongya Yang*. --- Oct.2021 - Jun.2022
+    <!-- Carousel Controls (Optional) -->
+    <a class="carousel-control-prev" href="#researchProjectsCarousel4" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
 
-**描述:** 仿生蚂蚁机器人通过群体智能和适应性提高在受限或危险区域（如地震、坍塌）的救援效率，降低人类救援人员的风险。
+    <a class="carousel-control-next" href="#researchProjectsCarousel4" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
 
-1. 负责机械和硬件设计，利用Arduino芯片控制仿生蚂蚁运动。
-2. 实现了6条腿20个舵机的控制，使用USART通信和蓝牙传感器交互控制。
-3. 这是网络上的开源项目，我们改变了支腿电机以提高机器人鲁棒性。
+<!-- Add video below the carousel -->
+<section id="video-section" class="video-section" style="margin-top: 5px;">
+    <div class="container px-5">
+        <header>
+            <h2>Project 2 Video</h2>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/project4-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
 
-### Project 6: National Undergraduate Training Program for Innovation and Entrepreneurship: Smart Home Security Robot (Project Number:202110731012---Undergraduate period)
+<div class="project-section">
+<h3>Project 4: National Undergraduate Training Program for Innovation and Entrepreneurship: 'Core Traffic' -Designed of A New Type of Traffic Direction Robot (Project Number:202210731019--- Undergraduate period)</h3>
+<p><strong>Members</strong>: <strong>Wenxuan Wang</strong>, Zixiang Nie, Zhenyu Chen, Huipeng He, Chaolei Pang, Shijun Hu*. --- Jan.2022 - Jan.2023</p> 
+<p><strong>Description:</strong> To enhance operational efficiency and reduce safety incidents in traffic police work, we designed a mobile intelligent robot that integrates robotic technology with traffic management. This robot can operate continuously for 24 hours, addressing the safety risks traffic police face due to fatigue, particularly during night shifts. The robot's mechanical structure consists of three main components: the body, robotic arm, and chassis.</p>
+<p>1.Designed an intelligent traffic-directing robot based on the STM32 chip, equipped with two 7-DOF humanoid robotic arms and four Mecanum wheels for mobility. This robot replaces humans in directing traffic and serves as a mobile electronic police unit.</p>
+<p>2.Controlled robotic arm movement by adjusting the PWM duty cycle to manipulate the rotation angle of each servo, allowing the two 7-DOF arms to accurately replicate traffic police hand signals.</p>
+<p>3.Incorporated image recognition technology using cameras mounted on the robotic arms. Combined with its mobility provided by the Mecanum wheels, the robot functions as a mobile electronic police officer, capable of capturing traffic violations and overcoming the limitations of stationary electronic police systems.</p>
+<p> <strong>Achievement</strong> : <a href="static/assets/11.pdf" target="_blank">National First Prize</strong> of the 23rd China Robotics and Artificial Intelligence Competition.</a>
 
-**成员:** **Wenxuan Wang**, Chongzheng Zhang, Wenhui Cai, Huipeng He,Shuzhen Zhang*. --- Oct.2021 - Jun.2022
+<a href="static/assets/22.pdf" target="_blank">National First Prize</strong>  of the International Youth Artificial Intelligence Innovation Competition.</a>.</p>
 
-**描述:** 空巢老人已成为我国日益关注的问题，每年都有许多因独居老人意外死亡而发生的事故。为了解决老年人独立生活面临的安全问题，我们利用Arduino、ESP8266 WiFi和HC-05蓝牙模块设计了智能家居安全机器人。该机器人提供各种功能，包括家庭安全威胁检测、烟雾报警、语音识别、视觉跟踪、人机交互和智能垃圾收集，提高老年人的整体家庭安全。
+<!-- Bootstrap Carousel for Image Auto-Play -->
+<div id="researchProjectsCarousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <!-- Indicators (Optional) -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel1" data-bs-slide-to="4"></li>
+    </ol>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+        <!-- First Image -->
+        <div class="carousel-item active">
+            <img src="static/assets/img/Traffic-Robot.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-1. 负责机器人的机械设计、仿真建模和运动控制，确保精确的功能和性能。
-2. 使用Arduino芯片开发了机器人底盘运动和5-DOF机械臂抓取动作的控制系统。
-3. 通过将超声波传感器与Arduino集成实现避障，使用USART通信并调整波特率以实现无缝传感器交互。
+        <!-- Second Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/Mechanical-construction.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Control Strategy Simulation" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-**成果:** [第三届中国大学智能机器人创意大赛全国二等奖](static/assets/33.pdf)
+        <!-- Third Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/Motion2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
 
-### Project 7: National Undergraduate Training Program for Innovation and Entrepreneurship: Intelligent Delivery Robot Based on Embedded Management (Project Number:202110731014 ---Undergraduate period)
+        <!-- Fourth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/Motion3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
 
-**成员:** Chaolei Pang**, Wenxuan Wang**, Mingfei Qing, Bowen Zhou, Xiangwan Ye, Dongya Yang*.--- Oct 2021 - June 2022
+        <!-- Fifth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/5-DOF-Arm.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+    
+        <!-- Add more carousel items as needed for each image -->
+    </div>
 
-**描述:** 研究开发了基于嵌入式管理系统的智能快递配送机器人，能够爬楼梯。通过利用三角履带轮，机器人克服了当前配送车辆无法导航楼梯的限制。此外，还集成了数据库来管理后端物流信息，结合硬件和软件实现高效配送操作。
+    <!-- Carousel Controls (Optional) -->
+    <a class="carousel-control-prev" href="#researchProjectsCarousel1" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
 
-1. 集成三角轮和履带结构，克服平面移动的限制，使机器人能够爬楼梯。在车辆顶部添加多自由度机械臂用于自动开门。
-2. 实现了基于二维码的实名制系统，用于安全的包裹取件。一旦微控制器检测到相应的二维码，就会触发电磁锁打开配送箱，同时将数据存储在后端数据库中。
-3. 领导机器人的机械设计，包括底盘运动控制和机械臂抓取动作。
+    <a class="carousel-control-next" href="#researchProjectsCarousel1" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+    
 
-**成果:** [第14届全国3D数字创新设计大赛全国一等奖](static/assets/44.pdf)
+<!-- Add video below the carousel -->
+<section id="video-section" class="video-section" style="margin-top: 5px;">
+    <div class="container px-5">
+        <header>
+            <h2>Project 3 Video</h2>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/project1-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
 
-### Project 8: A Multifunctional Robot for Mine Rehabilitation Grass Laying(Undergraduate period)
 
-**成员:** **Wenxuan Wang**, Hongchang Zhao, Chaolei Pang, Huipeng He, Tianchi Wang, Yuan He*.--- June 2020 - June 2021
+<div class="project-section">
+<h3>Project 5: A Bionic Ant Robot for Rescue with Arduino chip  (Undergraduate period)</h3>
+<p><strong>Members</strong>: <strong>Wenxuan Wang</strong>, Xinyue he, Chaolei Pang, Dongya Yang*. --- Oct.2021 - Jun.2022</p>
+<p><strong>Description:</strong> Bio-inspired ant robots enhance rescue efficiency in confined or hazardous areas (e.g., earthquakes, collapses) through swarm intelligence and adaptability, reducing risks for human responders.  </p>
+<p> 1.Responsible for the mechanical and hardware design, utilize the chip - Arduino to control Bionic Ant  motion</p>
+<p> 2.Implemented the control of 6 legs with 20 servo motors, using USART communication and Bluetooth sensor interaction control.</p>
+<p> 3.This is an open source project on the web, we have changed the outrigger motor improve robot robustness.</p>
 
-**描述:** 开发了用于矿山修复和滑坡管理的生态系统恢复机器人，能够执行多种功能，包括钻孔、浇筑、铺设和喷洒草籽。该机器人促进了退化地区的覆盖和植被恢复过程。
+<!-- Bootstrap Carousel for Image Auto-Play -->
+<div id="researchProjectsCarousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+<!-- Indicators (Optional) -->
+<ol class="carousel-indicators">
+    <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="1"></li>
+    <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="2"></li>
+    
+    
+</ol>
+<!-- Carousel Inner -->
+<div class="carousel-inner">
+    <!-- First Image -->
+    <div class="carousel-item active">
+        <img src="static/assets/img/4.24.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+        <div class="carousel-caption d-none d-md-block">
+            
+        </div>
+    </div>
 
-1. 领导整体机械结构的设计和加工，包括模型动画、底盘运动控制和机械臂钻孔功能。
-2. 为机器人配备了双履带移动底盘，使其能够在矿区的复杂地形中导航。集成了液压伸缩臂来控制钻头钻孔、播种机构喷洒草籽和皮带输送系统铺设草皮。
-3. 使用STM32C8T6作为控制核心，集成GPS定位、Mobileye和EyeQ3摄像头。机器人运动由齿轮电机驱动，而串行通信管理钻孔和草籽喷洒动作。
+        <!-- second Image -->
+        <div class="carousel-item">
+        <img src="static/assets/img/4.25.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+        <div class="carousel-caption d-none d-md-block">
+            
+        </div>
+    </div>
+        <!-- third Image -->
+        <div class="carousel-item">
+        <img src="static/assets/img/4.26.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+    </div>
+    <!-- Add more carousel items as needed for each image -->
+</div>
 
-**成果:** [第10届全国大学生机械创新设计大赛省级二等奖](static/assets/55.pdf)
+<!-- Carousel Controls (Optional) -->
+<a class="carousel-control-prev" href="#researchProjectsCarousel3" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</a>
 
-### Project 9: National Engineering Training Comprehensive Ability Competition for College Students - Intelligent Logistics Handling Track (Undergraduate period)
+<a class="carousel-control-next" href="#researchProjectsCarousel3" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</a>
+</div>
 
-**成员:** **Wenxuan Wang**, Xiangseng Kong, Chaolei Pang, Huipeng He, Dongya Yang*.--- Dec 2020 - July 2021
+<!-- Add video below the carousel -->
+<section id="video-section" class="video-section" style="margin-top: 5px;">
+<div class="container px-5">
+    <header>
+        <h2>Project 4 Video</h2>
+    </header>
+    <div class="main-body d-flex justify-content-center">
+        <!-- Video Embed -->
+        <video controls autoplay muted style="max-width: 800px; width: 100%;">
+            <source src="static/assets/video/4.24.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+</section>
+</div>
 
-**描述:** 设计了能够在给定场地内完成物料搬运任务的自主小车。通过扫描二维码识别物流序列，机器人自主确定要运输的适当材料并将其运送到指定区域。
+<div class="project-section">
+<h3>Project 6: National Undergraduate Training Program for Innovation and Entrepreneurship: Smart Home Security Robot (Project Number:202110731012---Undergraduate period)</h3>
+<p><strong>Members</strong>: <strong>Wenxuan Wang</strong>, Chongzheng Zhang, Wenhui Cai, Huipeng He,Shuzhen Zhang*. --- Oct.2021 - Jun.2022</p>
+<p><strong>Description:</strong> Empty nesters have become a growing concern in our country, with numerous accidents occurring each year due to the unexpected deaths of elderly individuals living alone. To address the safety issues faced by seniors living independently, we designed a smart home safety and security robot utilizing Arduino, ESP8266 WiFi, and the HC-05 Bluetooth module. This robot offers various features including home security threat detection, smoke alarms, voice recognition, visual tracking, human-machine interaction, and intelligent waste collection, enhancing overall home safety for elderly individuals.</p>
+<p> 1.Responsible for the mechanical design, imulation modeling, and motion control of the robot, ensuring precise functionality and performance..</p>
+<p> 2.Developed the control system for both the robot's chassis movement and the 5-DOF robotic arm's grasping actions using an Arduino chip.</p>
+<p> 3.Implemented obstacle avoidance by integrating ultrasonic sensors with Arduino, using USART communication and adjusting the baud rate for seamless sensor interaction.</p>
+<p> <strong>Achievement</strong> : <a href="static/assets/33.pdf" target="_blank">National Second Prize </strong>of the 3rd China University Intelligent Robot Creative Competition</a>
 
-1. 使用OpenMV进行物流中的颜色识别。识别的颜色被分类并通过串行命令传输到机械臂以执行抓取动作。
-2. 在小车的四个方向布置激光测距仪以计算场地大小。这些传感器的反馈用于建立平面坐标系进行实时小车定位。
-3. 负责设计搬运小车的机械结构，使用OpenMV实现颜色识别，并使用上位机控制机械臂的抓取动作。
 
-**成果:** [全国大学生工程训练综合能力竞赛省级三等奖](static/assets/66.pdf)
+<!-- Bootstrap Carousel for Image Auto-Play -->
+<div id="researchProjectsCarousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <!-- Indicators (Optional) -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="5"></li>
+    
+    </ol>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+        <!-- First Image -->
+        <div class="carousel-item active">
+            <img src="static/assets/img/model-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- Fifth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/model-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- sixth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/model-3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/actual-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/actual-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/simulate-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+    
+    
+        <!-- Add more carousel items as needed for each image -->
+    </div>
+
+    <!-- Carousel Controls (Optional) -->
+    <a class="carousel-control-prev" href="#researchProjectsCarousel3" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#researchProjectsCarousel3" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+    <!-- Add video below the carousel -->
+<section id="video-section" class="video-section" style="margin-top: 5px;">
+    <div class="container px-5">
+        <header>
+            <h2>Project 5 Video</h2>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/project3-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="project-section">
+<h3>Project 7:National Undergraduate Training Program for Innovation and Entrepreneurship: Intelligent Delivery Robot Based on Embedded Management (Project Number:202110731014 ---Undergraduate period)</h3>
+<p><strong>Members:</strong>Chaolei Pang<strong>, Wenxuan Wang</strong>, Mingfei Qing, Bowen Zhou, Xiangwan Ye, Dongya Yang*.--- Oct 2021 - June 2022</p>
+<p><strong>Description:</strong> Researched and developed an intelligent courier delivery robot based on an embedded management system, capable of climbing stairs. By utilizing triangular track wheels, the robot overcomes the limitation of current delivery vehicles that cannot navigate stairs. Additionally, a database was integrated to manage back-end logistics information, combining hardware and software to achieve efficient delivery operations.</p>
+<p>1. Integrated a triangular wheel and track structure to overcome the limitation of movement on flat surfaces, allowing the robot to climb stairs. A multi-degree-of-freedom robotic arm was added to the top of the vehicle for automatic door opening.</p>
+<p>2. Implemented a QR code-based real-name system for secure parcel pickup. Once the microcontroller detects the corresponding QR code, it triggers the electromagnetic lock to open the delivery box while simultaneously storing the data in the backend database.</p>
+<p>3. Led the mechanical design of the robot, including chassis motion control and the gripping actions of the robotic arm. </p>
+<p> <strong>Achievement</strong> : <a href="static/assets/44.pdf" target="_blank">National First Prize of the 14th National 3D Digital Innovation Design Competition.</a>
+<!-- Bootstrap Carousel for Image Auto-Play -->
+<div id="researchProjectsCarousel6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <!-- Indicators (Optional) -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="5"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="6"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="7"></li>
+    
+    </ol>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+        <!-- First Image -->
+        <div class="carousel-item active">
+            <img src="static/assets/img/project5-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- Fifth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- sixth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-7.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+    
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-8.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-9.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+    
+        <!-- Add more carousel items as needed for each image -->
+    </div>
+
+    <!-- Carousel Controls (Optional) -->
+    <a class="carousel-control-prev" href="#researchProjectsCarousel6" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#researchProjectsCarousel6" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<!-- Add video below the carousel -->
+<section id="video-section" class="video-section" style="margin-top: 5px;">
+    <div class="container px-5">
+        <header>
+            <h2>Project 6 Video</h2>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/project5-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+            <div class="project-section">
+<h3>Project 8: A Multifunctional Robot for Mine Rehabilitation Grass Laying(Undergraduate period)</h3>
+<p><strong>Members:</strong> <strong>Wenxuan Wang</strong>, Hongchang Zhao, Chaolei Pang, Huipeng He, Tianchi Wang, Yuan He*.--- June 2020 - June 2021</p>
+<p><strong>Description:</strong> Developed an ecosystem restoration robot for mine rehabilitation and landslide management, capable of performing multiple functions including drilling, pouring, laying, and spraying grass seeds. This robot facilitates the process of mulching and vegetation restoration in degraded areas.</p>
+<p>1. Led the design and machining of the overall mechanical structure, including model animation, chassis motion control, and robotic arm drilling functions.</p>
+<p>2. Equipped the robot with a dual-track mobile chassis, enabling it to navigate the complex terrain of mining areas. Integrated a hydraulic telescopic arm to control the auger for drilling, a seeding mechanism for spraying grass seeds, and a belt conveyor system for laying grass squares.</p>
+<p>3. Utilized an STM32C8T6 as the control core, incorporating GPS positioning, Mobileye, and an EyeQ3 camera. The robot's movement was driven by a geared motor, while serial communication managed the actions of drilling and grass seed spraying. </p>
+<p> <strong>Achievement</strong> : <a href="static/assets/55.pdf" target="_blank">Provincial Second Prize The 10th National Student Mechanical Innovation Design Competition.</a>
+<!-- Bootstrap Carousel for Image Auto-Play -->
+<div id="researchProjectsCarousel5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+    <!-- Indicators (Optional) -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="5"></li>
+    
+    </ol>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+        <!-- First Image -->
+        <div class="carousel-item active">
+            <img src="static/assets/img/project6-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- Fifth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project6-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- sixth Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project6-3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project6-4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project6-5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project6-7.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+    
+    
+        <!-- Add more carousel items as needed for each image -->
+    </div>
+
+    <!-- Carousel Controls (Optional) -->
+    <a class="carousel-control-prev" href="#researchProjectsCarousel5" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#researchProjectsCarousel5" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<!-- Add video below the carousel -->
+<section id="video-section" class="video-section" style="margin-top: 5px;">
+    <div class="container px-5">
+        <header>
+            <h2>Project 7 Video</h2>
+        </header>
+        <div class="main-body d-flex justify-content-center">
+            <!-- Video Embed -->
+            <video controls autoplay muted style="max-width: 800px; width: 100%;">
+                <source src="static/assets/video/project6-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
