@@ -304,7 +304,7 @@
 <section id="video-section" class="video-section" style="margin-top: 5px;">
     <div class="container px-5">
         <header>
-            <h2>Project 2 Video</h2>
+            <h2>Project 3 Video</h2>
         </header>
         <div class="main-body d-flex justify-content-center">
             <!-- Video Embed -->
@@ -398,7 +398,7 @@
 <section id="video-section" class="video-section" style="margin-top: 5px;">
     <div class="container px-5">
         <header>
-            <h2>Project 3 Video</h2>
+            <h2>Project 4 Video</h2>
         </header>
         <div class="main-body d-flex justify-content-center">
             <!-- Video Embed -->
@@ -471,7 +471,7 @@
 <section id="video-section" class="video-section" style="margin-top: 5px;">
 <div class="container px-5">
     <header>
-        <h2>Project 4 Video</h2>
+        <h2>Project 5 Video</h2>
     </header>
     <div class="main-body d-flex justify-content-center">
         <!-- Video Embed -->
@@ -574,7 +574,7 @@
 <section id="video-section" class="video-section" style="margin-top: 5px;">
     <div class="container px-5">
         <header>
-            <h2>Project 5 Video</h2>
+            <h2>Project 6 Video</h2>
         </header>
         <div class="main-body d-flex justify-content-center">
             <!-- Video Embed -->
@@ -695,7 +695,7 @@
 <section id="video-section" class="video-section" style="margin-top: 5px;">
     <div class="container px-5">
         <header>
-            <h2>Project 6 Video</h2>
+            <h2>Project 7 Video</h2>
         </header>
         <div class="main-body d-flex justify-content-center">
             <!-- Video Embed -->
@@ -795,7 +795,7 @@
 <section id="video-section" class="video-section" style="margin-top: 5px;">
     <div class="container px-5">
         <header>
-            <h2>Project 7 Video</h2>
+            <h2>Project 8 Video</h2>
         </header>
         <div class="main-body d-flex justify-content-center">
             <!-- Video Embed -->
