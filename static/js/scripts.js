@@ -35,16 +35,22 @@ window.addEventListener('DOMContentLoaded', event => {
         .then(response => response.text())
         .then(text => {
             const yml = jsyaml.load(text);
+            console.log('Loaded config:', yml);
             Object.keys(yml).forEach(key => {
                 try {
-                    document.getElementById(key).innerHTML = yml[key];
-                } catch {
-                    console.log("Unknown id and value: " + key + "," + yml[key].toString())
+                    const element = document.getElementById(key);
+                    if (element) {
+                        element.innerHTML = yml[key];
+                        console.log('Set', key, 'to', yml[key]);
+                    } else {
+                        console.log("Element not found for id:", key);
+                    }
+                } catch (error) {
+                    console.log("Error setting " + key + ":", error);
                 }
-
             })
         })
-        .catch(error => console.log(error));
+        .catch(error => console.log('Config loading error:', error));
 
 
     // Marked

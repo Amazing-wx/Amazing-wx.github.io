@@ -29,6 +29,11 @@
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
     
+    <!-- 预加载关键视频资源 -->
+    <link rel="preload" href="static/assets/video/3DGS.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="static/assets/video/staris.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="static/assets/video/wave-comensation.mp4" as="video" type="video/mp4">
+    
     <!-- 布局优化样式 -->
     <style>
     /* 全局优化 */
@@ -250,6 +255,68 @@
     .video-section video {
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    
+    /* 视频加载指示器 */
+    .video-loading {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .video-loading::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0 -20px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-top: 3px solid var(--h-title-color);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 10;
+    }
+    
+    .video-loading::after {
+        content: '视频加载中...';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20px);
+        color: var(--h-title-color);
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 10;
+    }
+    
+    .video-loaded::before,
+    .video-loaded::after {
+        display: none;
+    }
+    
+    /* 视频错误状态 */
+    .video-error::after {
+        content: '视频加载失败，请刷新页面重试';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #dc3545;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    /* 视频容器优化 */
+    .video-section .main-body {
+        position: relative;
+        min-height: 200px;
     }
 
     /* 文本内容优化 */
@@ -546,6 +613,17 @@
     
     <!-- 布局优化脚本 -->
     <script>
+    // 页面加载时立即开始预加载视频
+    window.addEventListener('load', function() {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(video => {
+            if (video.preload !== 'auto') {
+                video.preload = 'auto';
+                video.load();
+            }
+        });
+    });
+    
     // 平滑滚动
     document.addEventListener('DOMContentLoaded', function() {
         // 为所有导航链接添加平滑滚动
@@ -635,35 +713,26 @@
             });
         });
 
-        // 为视频添加懒加载和性能优化
+        // 为视频添加预加载和性能优化
         const videos = document.querySelectorAll('video');
-        const videoObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const video = entry.target;
-                    video.style.opacity = '1';
-                    video.style.transform = 'scale(1)';
-                    
-                    // 预加载视频元数据
-                    if (video.readyState === 0) {
-                        video.load();
-                    }
-                }
-            });
-        }, {
-            threshold: 0.3
-        });
-
+        
         videos.forEach(video => {
-            // 设置视频性能优化
-            video.preload = 'metadata';
-            video.style.opacity = '0';
-            video.style.transform = 'scale(0.95)';
-            video.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            // 添加加载状态类
+            video.parentElement.classList.add('video-loading');
+            
+            // 设置视频立即预加载
+            video.preload = 'auto';
+            video.style.opacity = '1';
+            video.style.transform = 'scale(1)';
+            
+            // 立即开始加载视频
+            video.load();
             
             // 添加错误处理
             video.addEventListener('error', function() {
                 console.log('Video loading error:', video.src);
+                video.parentElement.classList.remove('video-loading');
+                video.parentElement.classList.add('video-error');
             });
             
             // 添加加载完成事件
@@ -671,7 +740,23 @@
                 console.log('Video metadata loaded:', video.src);
             });
             
-            videoObserver.observe(video);
+            // 添加加载进度事件
+            video.addEventListener('progress', function() {
+                console.log('Video loading progress:', video.src);
+            });
+            
+            // 添加可以播放事件
+            video.addEventListener('canplay', function() {
+                console.log('Video can play:', video.src);
+                video.parentElement.classList.remove('video-loading');
+                video.parentElement.classList.add('video-loaded');
+            });
+            
+            // 添加播放开始事件
+            video.addEventListener('play', function() {
+                video.parentElement.classList.remove('video-loading');
+                video.parentElement.classList.add('video-loaded');
+            });
         });
 
         // 隐藏加载动画
@@ -797,7 +882,7 @@
     <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
         <div class="container px-5">
             <header>
-                <h2 id="home-subtitle"> </h2>
+                <h2 id="home-subtitle"><i class="bi bi-house-fill"></i>&nbsp;HOME</h2>
                 <!-- <span class="bi bi-list"></span> -->
             </header>
             <div class="main-body" id="home-md"></div>
