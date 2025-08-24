@@ -84,6 +84,37 @@ window.addEventListener('DOMContentLoaded', event => {
                                     console.log('Image failed to load:', img.src);
                                 });
                             });
+                            
+                            // 初始化轮播图
+                            const carousels = element.querySelectorAll('.carousel');
+                            console.log('Found', carousels.length, 'carousels in researchs section');
+                            carousels.forEach((carousel, index) => {
+                                console.log('Initializing carousel', index + 1, ':', carousel.id);
+                                
+                                try {
+                                    const carouselInstance = new bootstrap.Carousel(carousel, {
+                                        interval: 3000,
+                                        wrap: true,
+                                        keyboard: false
+                                    });
+                                    console.log('Carousel', index + 1, 'initialized successfully');
+                                    
+                                    // 确保轮播容器和图片可见
+                                    carousel.style.opacity = '1';
+                                    carousel.style.visibility = 'visible';
+                                    carousel.style.display = 'block';
+                                    
+                                    const carouselImages = carousel.querySelectorAll('img');
+                                    carouselImages.forEach(img => {
+                                        img.style.opacity = '1';
+                                        img.style.visibility = 'visible';
+                                        img.style.display = 'block';
+                                    });
+                                    
+                                } catch (error) {
+                                    console.log('Error initializing carousel', index + 1, ':', error);
+                                }
+                            });
                         }, 1000);
                     }
                 } else {

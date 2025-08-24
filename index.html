@@ -558,6 +558,19 @@
     img[data-src].loaded {
         opacity: 1;
     }
+    
+    /* 确保轮播图片始终可见 */
+    .carousel img {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+    
+    .carousel-item img {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+    }
 
     /* 选择文本样式 */
     ::selection {

@@ -421,12 +421,12 @@
 <p> 3.This is an open source project on the web, we have changed the outrigger motor improve robot robustness.</p>
 
 <!-- Bootstrap Carousel for Image Auto-Play -->
-<div id="researchProjectsCarousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+<div id="researchProjectsCarousel5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
 <!-- Indicators (Optional) -->
 <ol class="carousel-indicators">
-    <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="0" class="active"></li>
-    <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="1"></li>
-    <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="2"></li>
+    <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="1"></li>
+    <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="2"></li>
     
     
 </ol>
@@ -457,12 +457,12 @@
 </div>
 
 <!-- Carousel Controls (Optional) -->
-<a class="carousel-control-prev" href="#researchProjectsCarousel3" role="button" data-bs-slide="prev">
+<a class="carousel-control-prev" href="#researchProjectsCarousel5" role="button" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
 </a>
 
-<a class="carousel-control-next" href="#researchProjectsCarousel3" role="button" data-bs-slide="next">
+<a class="carousel-control-next" href="#researchProjectsCarousel5" role="button" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
 </a>
@@ -496,15 +496,15 @@
 
 
 <!-- Bootstrap Carousel for Image Auto-Play -->
-<div id="researchProjectsCarousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+<div id="researchProjectsCarousel6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
     <!-- Indicators (Optional) -->
     <ol class="carousel-indicators">
-        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="1"></li>
-        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="2"></li>
-        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="3"></li>
-        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="4"></li>
-        <li data-bs-target="#researchProjectsCarousel3" data-bs-slide-to="5"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="5"></li>
     
     </ol>
     <!-- Carousel Inner -->
@@ -560,12 +560,12 @@
     </div>
 
     <!-- Carousel Controls (Optional) -->
-    <a class="carousel-control-prev" href="#researchProjectsCarousel3" role="button" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#researchProjectsCarousel6" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </a>
 
-    <a class="carousel-control-next" href="#researchProjectsCarousel3" role="button" data-bs-slide="next">
+    <a class="carousel-control-next" href="#researchProjectsCarousel6" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </a>
@@ -599,17 +599,17 @@
 <p>3. Led the mechanical design of the robot, including chassis motion control and the gripping actions of the robotic arm. </p>
 <p> <strong>Achievement</strong> : <a href="static/assets/44.pdf" target="_blank">National First Prize of the 14th National 3D Digital Innovation Design Competition.</a>
 <!-- Bootstrap Carousel for Image Auto-Play -->
-<div id="researchProjectsCarousel6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+<div id="researchProjectsCarousel7" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
     <!-- Indicators (Optional) -->
     <ol class="carousel-indicators">
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="1"></li>
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="2"></li>
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="3"></li>
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="4"></li>
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="5"></li>
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="6"></li>
-        <li data-bs-target="#researchProjectsCarousel6" data-bs-slide-to="7"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="5"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="6"></li>
+        <li data-bs-target="#researchProjectsCarousel7" data-bs-slide-to="7"></li>
     
     </ol>
     <!-- Carousel Inner -->
@@ -681,12 +681,12 @@
     </div>
 
     <!-- Carousel Controls (Optional) -->
-    <a class="carousel-control-prev" href="#researchProjectsCarousel6" role="button" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#researchProjectsCarousel7" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </a>
 
-    <a class="carousel-control-next" href="#researchProjectsCarousel6" role="button" data-bs-slide="next">
+    <a class="carousel-control-next" href="#researchProjectsCarousel7" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </a>
@@ -717,15 +717,15 @@
 <p>3. Utilized an STM32C8T6 as the control core, incorporating GPS positioning, Mobileye, and an EyeQ3 camera. The robot's movement was driven by a geared motor, while serial communication managed the actions of drilling and grass seed spraying. </p>
 <p> <strong>Achievement</strong> : <a href="static/assets/55.pdf" target="_blank">Provincial Second Prize The 10th National Student Mechanical Innovation Design Competition.</a>
 <!-- Bootstrap Carousel for Image Auto-Play -->
-<div id="researchProjectsCarousel5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+<div id="researchProjectsCarousel8" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
     <!-- Indicators (Optional) -->
     <ol class="carousel-indicators">
-        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="1"></li>
-        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="2"></li>
-        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="3"></li>
-        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="4"></li>
-        <li data-bs-target="#researchProjectsCarousel5" data-bs-slide-to="5"></li>
+        <li data-bs-target="#researchProjectsCarousel8" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#researchProjectsCarousel8" data-bs-slide-to="1"></li>
+        <li data-bs-target="#researchProjectsCarousel8" data-bs-slide-to="2"></li>
+        <li data-bs-target="#researchProjectsCarousel8" data-bs-slide-to="3"></li>
+        <li data-bs-target="#researchProjectsCarousel8" data-bs-slide-to="4"></li>
+        <li data-bs-target="#researchProjectsCarousel8" data-bs-slide-to="5"></li>
     
     </ol>
     <!-- Carousel Inner -->
@@ -781,12 +781,12 @@
     </div>
 
     <!-- Carousel Controls (Optional) -->
-    <a class="carousel-control-prev" href="#researchProjectsCarousel5" role="button" data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#researchProjectsCarousel8" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </a>
 
-    <a class="carousel-control-next" href="#researchProjectsCarousel5" role="button" data-bs-slide="next">
+    <a class="carousel-control-next" href="#researchProjectsCarousel8" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </a>
