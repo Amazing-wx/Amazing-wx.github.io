@@ -534,6 +534,20 @@
         height: auto;
         object-fit: cover;
         display: block;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    /* 确保轮播容器可见 */
+    .carousel {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+    
+    .carousel-inner {
+        opacity: 1 !important;
+        visibility: visible !important;
     }
     
     /* 图片懒加载 */
@@ -708,13 +722,34 @@
 
         // 为轮播图添加悬停暂停功能和初始化
         const carousels = document.querySelectorAll('.carousel');
-        carousels.forEach(carousel => {
+        console.log('Found', carousels.length, 'carousels');
+        carousels.forEach((carousel, index) => {
+            console.log('Initializing carousel', index + 1, ':', carousel.id);
+            
             // 初始化轮播组件
-            const carouselInstance = new bootstrap.Carousel(carousel, {
-                interval: 3000,
-                wrap: true,
-                keyboard: false
-            });
+            try {
+                const carouselInstance = new bootstrap.Carousel(carousel, {
+                    interval: 3000,
+                    wrap: true,
+                    keyboard: false
+                });
+                console.log('Carousel', index + 1, 'initialized successfully');
+                
+                // 检查轮播中的图片
+                const images = carousel.querySelectorAll('img');
+                console.log('Carousel', index + 1, 'has', images.length, 'images');
+                images.forEach((img, imgIndex) => {
+                    console.log('Carousel', index + 1, 'Image', imgIndex + 1, ':', img.src);
+                    img.addEventListener('load', () => {
+                        console.log('Carousel', index + 1, 'Image', imgIndex + 1, 'loaded successfully');
+                    });
+                    img.addEventListener('error', () => {
+                        console.log('Carousel', index + 1, 'Image', imgIndex + 1, 'failed to load');
+                    });
+                });
+            } catch (error) {
+                console.log('Error initializing carousel', index + 1, ':', error);
+            }
             
             carousel.addEventListener('mouseenter', function() {
                 const instance = bootstrap.Carousel.getInstance(this);
