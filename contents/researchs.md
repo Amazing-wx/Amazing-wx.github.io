@@ -197,7 +197,7 @@
     </div>
 </section>
 
-            <div class="project-section">
+            
 <h3>Project 3: Hybrid variable stiffness collaborative robot for abrasive machining. (Postgraduate stage)</h3>
 <p><strong>Members</strong>: Zhisen Li, <strong>Wenxuan Wang</strong>, Chenghao Huang, Kun Chen, Shen Xu,Bin Li*, Peng Xu*. --- Dec.2023 - Sept.2024</p>
 <p><strong>Description:</strong> Designed a hybrid variable stiffness collaborative robot for grinding of complex curved components. The hybrid robot combines the high stiffness and high load capacity of parallel robots and the large workspace characteristics of tandem robots to perform a larger range of actions while maintaining structural stability.</p>
@@ -570,7 +570,7 @@
     </a>
 </div>
 
-    <!-- Add video below the carousel -->
+  
 <section id="video-section" class="video-section" style="margin-top: 5px;">
     <div class="container px-5">
         <header>
@@ -707,7 +707,7 @@
     </div>
 </section>
 
-            <div class="project-section">
+           
 <h3>Project 8: A Multifunctional Robot for Mine Rehabilitation Grass Laying(Undergraduate period)</h3>
 <p><strong>Members:</strong> <strong>Wenxuan Wang</strong>, Hongchang Zhao, Chaolei Pang, Huipeng He, Tianchi Wang, Yuan He*.--- June 2020 - June 2021</p>
 <p><strong>Description:</strong> Developed an ecosystem restoration robot for mine rehabilitation and landslide management, capable of performing multiple functions including drilling, pouring, laying, and spraying grass seeds. This robot facilitates the process of mulching and vegetation restoration in degraded areas.</p>
