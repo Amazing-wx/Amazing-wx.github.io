@@ -109,7 +109,7 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project1-5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project1-5.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -117,7 +117,7 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -125,7 +125,7 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/RE-Fig.16.b.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -133,7 +133,7 @@
     
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/RE-Fig.16.c Y.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/RE-Fig.16.c Y.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             </div>
         </div>
@@ -223,7 +223,7 @@
     <div class="carousel-inner">
         <!-- First Image -->
         <div class="carousel-item active">
-            <img src="static/assets/img/4-model (1).jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/4-model (1).jpg" class="d-block mx-auto w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -231,21 +231,21 @@
 
         <!-- Fifth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/4.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- sixth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/4-model (2).jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/4-model (2).jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/4-model (6).jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/4-model (6).jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -253,35 +253,35 @@
     
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/3.1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/3.1.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             </div>
         </div>
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/3.2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/3.2.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             </div>
         </div>
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/3.3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/3.3.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             </div>
         </div>
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/3.4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/3.4.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             </div>
         </div>
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/3.5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/3.5.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             </div>
         </div>
@@ -342,7 +342,7 @@
     <div class="carousel-inner">
         <!-- First Image -->
         <div class="carousel-item active">
-            <img src="static/assets/img/Traffic-Robot.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/Traffic-Robot.jpg" class="d-block mx-auto w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -350,7 +350,7 @@
 
         <!-- Second Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/Mechanical-construction.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Control Strategy Simulation" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/Mechanical-construction.jpg" class="d-block mx-auto w-100 img-fluid" alt="Control Strategy Simulation" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -358,14 +358,14 @@
 
         <!-- Third Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/Motion2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/Motion2.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             </div>
         </div>
 
         <!-- Fourth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/Motion3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/Motion3.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -373,7 +373,7 @@
 
         <!-- Fifth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/5-DOF-Arm.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/5-DOF-Arm.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -434,7 +434,7 @@
 <div class="carousel-inner">
     <!-- First Image -->
     <div class="carousel-item active">
-        <img src="static/assets/img/4.24.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+        <img src="static/assets/img/4.24.jpg" class="d-block mx-auto w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
         <div class="carousel-caption d-none d-md-block">
             
         </div>
@@ -442,14 +442,14 @@
 
         <!-- second Image -->
         <div class="carousel-item">
-        <img src="static/assets/img/4.25.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+        <img src="static/assets/img/4.25.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
         <div class="carousel-caption d-none d-md-block">
             
         </div>
     </div>
         <!-- third Image -->
         <div class="carousel-item">
-        <img src="static/assets/img/4.26.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+        <img src="static/assets/img/4.26.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
         <div class="carousel-caption d-none d-md-block">
         </div>
     </div>
@@ -511,7 +511,7 @@
     <div class="carousel-inner">
         <!-- First Image -->
         <div class="carousel-item active">
-            <img src="static/assets/img/model-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/model-1.jpg" class="d-block mx-auto w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -519,29 +519,21 @@
 
         <!-- Fifth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/model-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/model-2.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- sixth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/model-3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/model-3.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/actual-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
-            <div class="carousel-caption d-none d-md-block">
-            
-            </div>
-        </div>
-
-        <!-- seventh Image -->
-        <div class="carousel-item">
-            <img src="static/assets/img/actual-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/actual-1.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -549,7 +541,15 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/simulate-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/actual-2.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/simulate-1.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -616,7 +616,7 @@
     <div class="carousel-inner">
         <!-- First Image -->
         <div class="carousel-item active">
-            <img src="static/assets/img/project5-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project5-1.jpg" class="d-block mx-auto w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -624,29 +624,21 @@
 
         <!-- Fifth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project5-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project5-2.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- sixth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project5-3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project5-3.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project5-4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
-            <div class="carousel-caption d-none d-md-block">
-            
-            </div>
-        </div>
-
-        <!-- seventh Image -->
-        <div class="carousel-item">
-            <img src="static/assets/img/project5-7.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project5-4.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -654,7 +646,15 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project5-5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project5-7.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project5-5.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -663,7 +663,7 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project5-8.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project5-8.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -671,7 +671,7 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project5-9.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project5-9.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -732,7 +732,7 @@
     <div class="carousel-inner">
         <!-- First Image -->
         <div class="carousel-item active">
-            <img src="static/assets/img/project6-1.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project6-1.jpg" class="d-block mx-auto w-100 img-fluid" alt="Redundant Drive Mechanism Model" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -740,29 +740,21 @@
 
         <!-- Fifth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project6-2.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project6-2.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- sixth Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project6-3.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project6-3.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
         </div>
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project6-4.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
-            <div class="carousel-caption d-none d-md-block">
-            
-            </div>
-        </div>
-
-        <!-- seventh Image -->
-        <div class="carousel-item">
-            <img src="static/assets/img/project6-5.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project6-4.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>
@@ -770,7 +762,15 @@
 
         <!-- seventh Image -->
         <div class="carousel-item">
-            <img src="static/assets/img/project6-7.jpg" class="d-block mx-auto" class="d-block w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <img src="static/assets/img/project6-5.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
+            <div class="carousel-caption d-none d-md-block">
+            
+            </div>
+        </div>
+
+        <!-- seventh Image -->
+        <div class="carousel-item">
+            <img src="static/assets/img/project6-7.jpg" class="d-block mx-auto w-100 img-fluid" alt="Experimental Setup" style="max-width: 500px; height: auto;">
             <div class="carousel-caption d-none d-md-block">
             
             </div>

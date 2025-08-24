@@ -69,6 +69,23 @@ window.addEventListener('DOMContentLoaded', event => {
                 if (element) {
                     element.innerHTML = html;
                     console.log('Successfully loaded', name, 'section');
+                    
+                    // 检查图片是否正确加载
+                    if (name === 'researchs') {
+                        setTimeout(() => {
+                            const images = element.querySelectorAll('img');
+                            console.log('Found', images.length, 'images in researchs section');
+                            images.forEach((img, index) => {
+                                console.log('Image', index, ':', img.src);
+                                img.addEventListener('load', () => {
+                                    console.log('Image loaded successfully:', img.src);
+                                });
+                                img.addEventListener('error', () => {
+                                    console.log('Image failed to load:', img.src);
+                                });
+                            });
+                        }, 1000);
+                    }
                 } else {
                     console.log('Element not found for', name + '-md');
                 }

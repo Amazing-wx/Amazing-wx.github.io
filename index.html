@@ -523,6 +523,17 @@
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
         transition: opacity 0.3s ease;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /* 轮播图片特殊样式 */
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
     }
     
     /* 图片懒加载 */
@@ -695,20 +706,27 @@
             imageObserver.observe(img);
         });
 
-        // 为轮播图添加悬停暂停功能
+        // 为轮播图添加悬停暂停功能和初始化
         const carousels = document.querySelectorAll('.carousel');
         carousels.forEach(carousel => {
+            // 初始化轮播组件
+            const carouselInstance = new bootstrap.Carousel(carousel, {
+                interval: 3000,
+                wrap: true,
+                keyboard: false
+            });
+            
             carousel.addEventListener('mouseenter', function() {
-                const carouselInstance = bootstrap.Carousel.getInstance(this);
-                if (carouselInstance) {
-                    carouselInstance.pause();
+                const instance = bootstrap.Carousel.getInstance(this);
+                if (instance) {
+                    instance.pause();
                 }
             });
             
             carousel.addEventListener('mouseleave', function() {
-                const carouselInstance = bootstrap.Carousel.getInstance(this);
-                if (carouselInstance) {
-                    carouselInstance.cycle();
+                const instance = bootstrap.Carousel.getInstance(this);
+                if (instance) {
+                    instance.cycle();
                 }
             });
         });
